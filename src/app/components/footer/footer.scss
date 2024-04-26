@@ -1,7 +1,19 @@
+@import "../../styles//mixins";
 .footer-container {
   margin-top: 100px;
   background: #050505;
   border-top-left-radius: 25px; /* Rounded top-left corner */
   border-top-right-radius: 25px;
   padding: 50px;
+  .top-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .footer-title {
+      @include textVariant(50px, #ffffff, 400, "Tahoma");
+    }
+  }
+  .footer-content {
+    margin: 30px 0px 20px;
+  }
 }
