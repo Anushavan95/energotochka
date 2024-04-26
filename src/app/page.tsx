@@ -7,7 +7,7 @@ import Main from "./components/main/main";
 export default function Home() {
   return (
     <>
-      <div className={"container-2xl layout-container"}>
+      <div className={"container-2xl "}>
         <Header />
         <Main />
       </div>
