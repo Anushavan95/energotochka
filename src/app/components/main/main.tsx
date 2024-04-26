@@ -5,6 +5,7 @@ import Blogs from "./blogs/blogs";
 import Cards from "./card/cards";
 import FAQs from "./FAQ/faqs";
 import "./main.scss";
+import Network from "./network/network";
 import TabsCard from "./TabContent/TabsCard";
 const Main = () => {
   return (
@@ -12,6 +13,7 @@ const Main = () => {
       <About />
       <Cards />
       <TabsCard />
+      {/* <Network /> */}
       <FAQs />
       <Blogs />
     </div>

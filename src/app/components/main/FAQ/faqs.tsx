@@ -51,31 +51,33 @@ const FAQs = () => {
   ];
 
   return (
-    <div className=" mx-auto">
-      <h1 className="text-3xl font-bold mb-4">F.A.Q.</h1>
+    <div className="faq-container mx-auto">
+      <h3 className="text-3xl font-bold mb-4">F.A.Q.</h3>
       {faqs.map((faq) => (
-        <div key={faq.id} className="mb-4">
+        <div key={faq.id} className="mb-4 faq-list">
           <div
             className="flex items-center justify-between cursor-pointer"
             onClick={() => toggleAnswer(faq.id)}
           >
-            <h2 className="text-xl font-semibold">{faq.question}</h2>
-            <svg
-              className={`w-6 h-6 ${
-                showAnswer[faq.id] ? "transform rotate-180" : ""
-              }`}
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M6.293 7.293a1 1 0 011.414 1.414L10 11.414l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
+            <h2 className="text-xl faq-title font-semibold">{faq.question}</h2>
+            <div className="circle-arrow">
+              <svg
+                className={`w-6 h-6 ${
+                  showAnswer[faq.id] ? "transform rotate-180" : ""
+                }`}
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M6.293 7.293a1 1 0 011.414 1.414L10 11.414l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </div>
           </div>
-          {showAnswer[faq.id] && <p className="mt-2">{faq.answer}</p>}
+          {showAnswer[faq.id] && <p className="mt-2 ">{faq.answer}</p>}
         </div>
       ))}
     </div>

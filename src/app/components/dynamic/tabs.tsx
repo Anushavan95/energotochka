@@ -11,7 +11,7 @@ const Tabs = ({ tabs }: any) => {
 
   return (
     <div>
-      <div className="flex">
+      <div className="flex buttons-tab">
         {tabs.map((tab: any, index: number) => (
           <button
             key={index}

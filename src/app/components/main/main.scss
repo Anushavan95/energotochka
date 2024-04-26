@@ -91,9 +91,72 @@
 }
 
 .full-card-title {
-  @include textVariant(24px, #050505, 400, "Tahoma");
+  @include textVariant(24px, #050505, 500, "Tahoma");
+}
+
+.card-tab-container {
+  margin-top: 100px;
+  .card-tab-title {
+    @include textVariant(30px, #353535, 500, "Tahoma");
+    margin-bottom: 10px;
+  }
+  .rounded {
+    background: #34ab7d;
+    border-radius: 20px;
+  }
+  .buttons-tab {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    width: 100%;
+    gap: 15px;
+    .text-gray-800 {
+      background-color: white;
+    }
+  }
 }
 .cards_tab {
   display: flex;
   justify-content: space-between;
+  .card {
+    // max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 20px;
+  }
+  .more-btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    background: #34ab7d;
+  }
+}
+
+// FAQ
+
+.faq-container {
+  margin-top: 100px;
+  .faq-list {
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 15px;
+  }
+  .faq-title {
+    @include textVariant(18px, #101010, 400, "Tahoma");
+  }
+  .circle-arrow {
+    background: #34ab7d;
+    border-radius: 25px;
+    path {
+      color: white;
+    }
+  }
+}
+
+// BLOGS
+.blogs_container {
+  margin-top: 100px;
 }
