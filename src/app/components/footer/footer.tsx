@@ -1,8 +1,8 @@
 import React from "react";
-
+import "./footer.scss";
 export const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-4">
+    <footer className="text-white py-4 rounded-t-lg border-t-2 footer-container">
       <div className="container mx-auto flex justify-between items-center">
         <div>
           <ul>

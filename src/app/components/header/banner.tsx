@@ -22,7 +22,7 @@ const Banner = () => {
           alt="Electronica of the author"
         />
         <div>
-          <h3 className="banner_title">WM-DCEV</h3>
+          <h3 className="banner_title text-3xl font-bold mb-4">WM-DCEV</h3>
           <p className="banner_info">
             Настенное зарядное устройство заряжает за 1 час — 165 километров
             пути
