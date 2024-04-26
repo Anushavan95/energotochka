@@ -28,5 +28,19 @@ body {
 }
 
 .layout-container {
+  /* padding: 50px; */
   padding: 50px;
+
+  /* max-width: 1180px;
+  width: 100%; */
+  margin: 0 auto;
+}
+
+@keyframes running-line {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
 }
