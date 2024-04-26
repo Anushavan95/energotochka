@@ -1,9 +1,19 @@
+import TelegramIcon from "@/app/assets/icon/Telegram";
+import VkIcon from "@/app/assets/icon/Vk";
 import React from "react";
 import "./footer.scss";
 export const Footer = () => {
   return (
     <footer className="text-white py-4 rounded-t-lg border-t-2 footer-container">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="top-footer">
+        <h2 className="footer-title">energotochka</h2>
+        <div className="flex gap-5">
+          <VkIcon />
+          <TelegramIcon />
+        </div>
+      </div>
+
+      <div className="footer-content container mx-auto flex justify-between items-center">
         <div>
           <ul>
             <li>сертификаты и иные документы</li>
