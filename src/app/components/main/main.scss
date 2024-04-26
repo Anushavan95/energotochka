@@ -93,3 +93,7 @@
 .full-card-title {
   @include textVariant(24px, #050505, 400, "Tahoma");
 }
+.cards_tab {
+  display: flex;
+  justify-content: space-between;
+}
