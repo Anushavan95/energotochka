@@ -1,7 +1,9 @@
+"use client";
+
 import { useState } from "react";
 
-const Tabs = ({ tabs }) => {
-  const [activeTab, setActiveTab] = useState(0);
+const Tabs = ({ tabs }: any) => {
+  const [activeTab, setActiveTab] = useState<number>(0);
 
   const handleClick = (index: number) => {
     setActiveTab(index);
