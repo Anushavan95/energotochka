@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "../../../../../node_modules/next/image";
 import AbouImage from "../../../assets/images/about.png";
 
 const About = () => {

@@ -1,6 +1,6 @@
 import React from "react";
+import Image from "../../../../node_modules/next/image";
 import Point from "../../assets/images/point.png";
-import Image from "next/image";
 
 const Banner = () => {
   return (
