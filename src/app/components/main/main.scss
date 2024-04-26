@@ -50,6 +50,17 @@
       #000000 0%,
       rgba(0, 0, 0, 0) 100%
     );
+    .line {
+      border-image-source: linear-gradient(
+        90deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0) 100%
+      );
+      border-image-slice: 1;
+      //   background-color: #000000;
+      //   border: 1px solid black;
+      //   border: 0.5px solid;
+    }
   }
 }
 
@@ -68,4 +79,17 @@
       rgba(0, 0, 0, 0) 100%
     );
   }
+  .line {
+    border-image-source: linear-gradient(
+      90deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+
+    border-image-slice: 1;
+  }
+}
+
+.full-card-title {
+  @include textVariant(24px, #050505, 400, "Tahoma");
 }

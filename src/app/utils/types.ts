@@ -1,17 +1,17 @@
 import React from "react";
-
+// import Arrow from "../assets/icon/Arrow";
 export const descriptionBlock: string | React.ReactNode =
   "Все зарядные станции, поставляемые нами совместимы с различными моделями автомобилей, например такие как «Zeekr», «Volkswagen», «Tesla», «NIO», «Nissan», «Lixiang», «Mercedes», «BYD», «BMW» и прочее";
 
 export const listDescriptionBlock: any = `<ul>
-<li>подключение через «Bluetooth»</li>
-<li>регулирование заряда тока</li>
-<li>управление через приложение</li>
-<li>записывание истории заряда</li>
+<li> подключение через «Bluetooth»</li>
+<li> регулирование заряда тока</li>
+<li> управление через приложение</li>
+<li> записывание истории заряда</li>
 </ul>`;
 
 export const secureDescriptionBlock: any = `<ul>
-<li>защита от перенапряжения</li>
+<li>  защита от перенапряжения</li>
 <li>защита от перегревания</li>
 <li>защита от недонапряжения</li>
 <li>защита от молнии и непогоды</li>
