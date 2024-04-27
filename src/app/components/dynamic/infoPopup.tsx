@@ -1,11 +1,12 @@
 "use client";
 import { useState } from "react";
 interface Iinfo {
-  title: string;
+  title?: string;
+  btnText?: string;
   //   levelText1?: string;
   children?: React.ReactNode;
 }
-const InfoPopup: React.FC<Iinfo> = ({ title, children }) => {
+const InfoPopup: React.FC<Iinfo> = ({ title, children, btnText }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {
@@ -15,12 +16,9 @@ const InfoPopup: React.FC<Iinfo> = ({ title, children }) => {
   return (
     <div className="info-popup-container">
       {/* Modal Trigger Button */}
-      <button
-        onClick={openModal}
-        className="more-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2  px-4 rounded"
-      >
-        Читать статью
-      </button>
+      <p onClick={openModal} className="read_state">
+        {btnText}
+      </p>
 
       {/* Modal Overlay */}
       {isOpen && <div className="fixed inset-0 bg-black opacity-50 z-50"></div>}

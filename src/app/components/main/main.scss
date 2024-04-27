@@ -163,6 +163,11 @@
   margin-top: 100px;
 }
 .info-popup-container {
+  .read_state {
+    margin-top: 10px;
+    cursor: pointer;
+    @include textVariant(18px, #34ab7d, 400, "Tahoma");
+  }
   .rounded {
     max-width: 1100px;
     width: 100%;
