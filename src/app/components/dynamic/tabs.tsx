@@ -6,7 +6,6 @@ const Tabs = ({ tabs }: any) => {
   const [activeTab, setActiveTab] = useState<number>(0);
 
   const handleClick = (tab: any, index: number) => {
-    console.log(tab, "tab");
     setActiveTab(index);
   };
 
