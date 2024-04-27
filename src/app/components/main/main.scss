@@ -67,6 +67,7 @@
 .blogs_list {
   display: flex;
   justify-content: space-between;
+  gap: 15px;
   .full-card {
     max-width: 380px;
     width: 100%;
@@ -162,10 +163,11 @@
 .blogs_container {
   margin-top: 100px;
 }
-.info-popup-container {
+.blogs_list {
   .read_state {
     margin-top: 10px;
     cursor: pointer;
+
     @include textVariant(18px, #34ab7d, 400, "Tahoma");
   }
   .rounded {

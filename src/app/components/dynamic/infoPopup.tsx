@@ -3,7 +3,6 @@ import { useState } from "react";
 interface Iinfo {
   title?: string;
   btnText?: string;
-  //   levelText1?: string;
   children?: React.ReactNode;
 }
 const InfoPopup: React.FC<Iinfo> = ({ title, children, btnText }) => {
