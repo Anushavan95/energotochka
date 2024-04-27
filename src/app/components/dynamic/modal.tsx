@@ -48,9 +48,9 @@ const Modal: React.FC<Imodal> = ({ setContent, item }) => {
                 </button>
                 <div className="blogs-content">
                   {item.blog &&
-                    item?.blog?.map((blog: blogType) => {
+                    item?.blog?.map((blog: blogType, index: number) => {
                       return (
-                        <div className="blog-card">
+                        <div key={index} className="blog-card">
                           <h3>{blog.title}</h3>
                           <p>{blog.desc}</p>
                         </div>
