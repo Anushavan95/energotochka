@@ -5,7 +5,8 @@ import { useState } from "react";
 const Tabs = ({ tabs }: any) => {
   const [activeTab, setActiveTab] = useState<number>(0);
 
-  const handleClick = (index: number) => {
+  const handleClick = (tab: any, index: number) => {
+    console.log(tab, "tab");
     setActiveTab(index);
   };
 
@@ -15,7 +16,7 @@ const Tabs = ({ tabs }: any) => {
         {tabs.map((tab: any, index: number) => (
           <button
             key={index}
-            onClick={() => handleClick(index)}
+            onClick={() => handleClick(tab, index)}
             className={`${
               index === activeTab
                 ? "bg-blue-500 text-white"
