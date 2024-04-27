@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "../../../../node_modules/next/image";
 import Point from "../../assets/images/point.png";
+import InfoPopup from "../dynamic/infoPopup";
 
 const Banner = () => {
   return (
@@ -10,9 +11,10 @@ const Banner = () => {
           Помогаем предпринимателям и компаниям открыть новый рынок с
           безграничными возможностями
         </p>
-        <button className="banner_button bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+        {/* <button className="banner_button bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
           Посмотреть коммерческое предложение
-        </button>
+        </button> */}
+        <InfoPopup btnText={`Посмотреть коммерческое предложение`} />
       </div>
       <div className="banner_card second_banner ">
         <Image
