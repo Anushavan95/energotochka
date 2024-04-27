@@ -1,9 +1,12 @@
 import React from "react";
+import InfoPopup from "../../dynamic/infoPopup";
+
 interface Iprops {
   title: string;
   htmlContent?: string | any;
+  children?: React.ReactNode;
 }
-const Card: React.FC<Iprops> = ({ title, htmlContent }) => {
+const Card: React.FC<Iprops> = ({ title, htmlContent, children }) => {
   return (
     <div className="full-card max-w-sm rounded overflow-hidden shadow-lg">
       <div className="px-6 py-4">
@@ -12,6 +15,7 @@ const Card: React.FC<Iprops> = ({ title, htmlContent }) => {
         </h3>
         <div className="line"></div>
         <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+        {children}
       </div>
     </div>
   );

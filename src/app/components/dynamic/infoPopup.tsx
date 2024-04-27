@@ -1,17 +1,14 @@
 "use client";
-import { blogType } from "@/app/utils/types";
 import { useState } from "react";
-import Image from "../../../../node_modules/next/image";
-interface Imodal {
-  setContent: (item: any) => void;
-  item: any;
+interface Iinfo {
+  title: string;
+  levelText1?: string;
 }
-const Modal: React.FC<Imodal> = ({ setContent, item }) => {
+const InfoPopup: React.FC<Iinfo> = ({ title, levelText1 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {
     setIsOpen(true);
-    setContent(item);
   };
   const closeModal = () => setIsOpen(false);
   return (
@@ -21,7 +18,7 @@ const Modal: React.FC<Imodal> = ({ setContent, item }) => {
         onClick={openModal}
         className="more-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2  px-4 rounded"
       >
-        Подробнее
+        Читать статью
       </button>
 
       {/* Modal Overlay */}
@@ -29,7 +26,7 @@ const Modal: React.FC<Imodal> = ({ setContent, item }) => {
 
       {/* Modal Dialog Box */}
       {isOpen && (
-        <div className="modal-content fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white shadow-md p-8 rounded z-50">
+        <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white shadow-md p-8 rounded z-50">
           <div>
             <span
               onClick={closeModal}
@@ -37,7 +34,9 @@ const Modal: React.FC<Imodal> = ({ setContent, item }) => {
             >
               ×
             </span>
-            <div className="content-modal-part">
+            <h3>{title}</h3>
+            <p>{levelText1}</p>
+            {/* <div className="content-modal-part">
               <Image className="rounded-t-lg" src={item.image} alt="" />
               <div>
                 <p>{item.contentTitle}</p>
@@ -58,12 +57,11 @@ const Modal: React.FC<Imodal> = ({ setContent, item }) => {
                     })}
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       )}
     </div>
   );
 };
-
-export default Modal;
+export default InfoPopup;

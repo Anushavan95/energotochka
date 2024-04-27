@@ -3,7 +3,6 @@ import {
   listDescriptionBlock,
   secureDescriptionBlock,
 } from "@/app/utils/types";
-import React from "react";
 import Card from "./card";
 
 const Cards = () => {
@@ -11,7 +10,10 @@ const Cards = () => {
     <div className="cards_container">
       <h3 className="cards_title">преимущества наших станций</h3>
       <section className="cards-list">
-        <Card title={"Инновационность"} htmlContent={listDescriptionBlock} />
+        <Card
+          title={"Инновационность"}
+          htmlContent={listDescriptionBlock}
+        ></Card>
         <Card title={"Совместимость"} htmlContent={descriptionBlock} />
         <Card title={"Безопасность"} htmlContent={secureDescriptionBlock} />
       </section>
