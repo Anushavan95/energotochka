@@ -1,11 +1,23 @@
+@import url('https://db.onlinewebfonts.com/c/3f605c44a5fad5a5a42710fc696d9488?family=Age');
+
+@font-face {
+    font-family: "Age";
+    src: url("https://db.onlinewebfonts.com/t/3f605c44a5fad5a5a42710fc696d9488.eot");
+    src: url("https://db.onlinewebfonts.com/t/3f605c44a5fad5a5a42710fc696d9488.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/3f605c44a5fad5a5a42710fc696d9488.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/3f605c44a5fad5a5a42710fc696d9488.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/3f605c44a5fad5a5a42710fc696d9488.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/3f605c44a5fad5a5a42710fc696d9488.svg#Age")format("svg");
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: #f5f5f5;
-  /* --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255; */
+    --foreground-rgb: #f5f5f5;
+    font-family: "Age";
+    /* --background-start-rgb: 214, 219, 220;Z
+    --background-end-rgb: 255, 255, 255; */
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -17,30 +29,31 @@
 } */
 
 body {
-  /* color: rgb(var(--foreground-rgb)); */
-  background: var(--foreground-rgb);
+    /* color: rgb(var(--foreground-rgb)); */
+    background: var(--foreground-rgb);
+    font-family: "Age";
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
 }
 
 .layout-container {
-  /* padding: 50px; */
-  padding: 50px;
+    /* padding: 50px; */
+    padding: 50px;
 
-  /* max-width: 1180px;
-  width: 100%; */
-  margin: 0 auto;
+    /* max-width: 1180px;
+    width: 100%; */
+    margin: 0 auto;
 }
 
 @keyframes running-line {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 100% 0;
-  }
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
 }
