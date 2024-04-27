@@ -2,9 +2,10 @@
 import { useState } from "react";
 interface Iinfo {
   title: string;
-  levelText1?: string;
+  //   levelText1?: string;
+  children?: React.ReactNode;
 }
-const InfoPopup: React.FC<Iinfo> = ({ title, levelText1 }) => {
+const InfoPopup: React.FC<Iinfo> = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {
@@ -12,7 +13,7 @@ const InfoPopup: React.FC<Iinfo> = ({ title, levelText1 }) => {
   };
   const closeModal = () => setIsOpen(false);
   return (
-    <div>
+    <div className="info-popup-container">
       {/* Modal Trigger Button */}
       <button
         onClick={openModal}
@@ -35,7 +36,8 @@ const InfoPopup: React.FC<Iinfo> = ({ title, levelText1 }) => {
               ×
             </span>
             <h3>{title}</h3>
-            <p>{levelText1}</p>
+            {children}
+            {/* <p>{levelText1}</p> */}
             {/* <div className="content-modal-part">
               <Image className="rounded-t-lg" src={item.image} alt="" />
               <div>
