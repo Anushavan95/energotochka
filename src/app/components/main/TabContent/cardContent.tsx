@@ -9,12 +9,14 @@ interface Icard {
 }
 const CardContent: React.FC<Icard> = ({ tabCard }) => {
   const [content, setContent] = useState<tabsCardType[] | null>(null);
-  console.log(content, "content");
   return (
     <>
       {tabCard.map((item: tabsCardType, index: number) => {
         return (
-          <div className="card max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div
+            key={index}
+            className="card max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
             <a href="#">
               <Image className="rounded-t-lg" src={item.image} alt="" />
             </a>
