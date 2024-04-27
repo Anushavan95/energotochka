@@ -1,5 +1,3 @@
-import React from "react";
-import Tabs from "../dynamic/tabs";
 import About from "./about/about";
 import Blogs from "./blogs/blogs";
 import Cards from "./card/cards";
@@ -13,7 +11,7 @@ const Main = () => {
       <About />
       <Cards />
       <TabsCard />
-      {/* <Network /> */}
+      <Network />
       <FAQs />
       <Blogs />
     </div>

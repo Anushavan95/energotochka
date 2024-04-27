@@ -100,7 +100,7 @@
     @include textVariant(30px, #353535, 500, "Tahoma");
     margin-bottom: 10px;
   }
-  .rounded {
+  button {
     background: #34ab7d;
     border-radius: 20px;
   }
@@ -118,6 +118,8 @@
 .cards_tab {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
   .card {
     // max-width: 320px;
     display: flex;
@@ -159,4 +161,39 @@
 // BLOGS
 .blogs_container {
   margin-top: 100px;
+}
+
+// NETWORK
+
+.network_content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  background-color: white;
+  padding: 30px 40px 30px 20px;
+  border-radius: 15px;
+  .banner_button {
+    background: #34ab7d;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .inputs_container {
+    max-width: 540px;
+    width: 100%;
+    input {
+      margin: 5px 0px;
+      border-bottom: 1px solid #050505;
+    }
+    .info {
+      margin-top: 10px;
+      @include textVariant(14px, #959595, 400, "Tahoma");
+      text-align: center;
+    }
+  }
+}
+
+// modal
+
+.modal-content {
+  background-color: white;
 }
