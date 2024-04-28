@@ -1,19 +1,6 @@
-@import url("https://db.onlinewebfonts.com/c/3f605c44a5fad5a5a42710fc696d9488?family=Age");
+@import url("https://db.onlinewebfonts.com/c/3f605c44a5fad5a5a42710fc696d9488?family=Age&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@font-face {
-  font-family: "Age";
-  src: url("https://db.onlinewebfonts.com/t/3f605c44a5fad5a5a42710fc696d9488.eot");
-  src: url("https://db.onlinewebfonts.com/t/3f605c44a5fad5a5a42710fc696d9488.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/3f605c44a5fad5a5a42710fc696d9488.woff2")
-      format("woff2"),
-    url("https://db.onlinewebfonts.com/t/3f605c44a5fad5a5a42710fc696d9488.woff")
-      format("woff"),
-    url("https://db.onlinewebfonts.com/t/3f605c44a5fad5a5a42710fc696d9488.ttf")
-      format("truetype"),
-    url("https://db.onlinewebfonts.com/t/3f605c44a5fad5a5a42710fc696d9488.svg#Age")
-      format("svg");
-}
+
 
 
 /* @font-face {
