@@ -65,14 +65,18 @@ const FAQs = () => {
                 className={`w-6 h-6 ${
                   showAnswer[faq.id] ? "transform rotate-180" : ""
                 }`}
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
               >
                 <path
-                  fillRule="evenodd"
-                  d="M6.293 7.293a1 1 0 011.414 1.414L10 11.414l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
-                  clipRule="evenodd"
+                  d="M7 10L12 15L17 10"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
               </svg>
             </div>

@@ -12,6 +12,7 @@ const Main = () => {
       <About />
       <Cards />
       <TabsCard />
+      <Cards />
       <Network />
       <FAQs />
       <Blogs />

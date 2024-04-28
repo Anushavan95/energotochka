@@ -77,6 +77,10 @@
   display: flex;
   justify-content: space-between;
   gap: 15px;
+  p {
+    @include textVariant(18px, #353535, 400, "sans-serif");
+    font-family: sans-serif;
+  }
   .full-card {
     max-width: 380px;
     width: 100%;
@@ -101,7 +105,9 @@
 }
 
 .full-card-title {
-  @include textVariant(24px, #050505, 500, "Tahoma");
+  @include textVariant(20px, #050505, 400, "sans-serif");
+  font-family: sans-serif;
+  border-bottom: 1px solid;
 }
 
 .card-tab-container {
