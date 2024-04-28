@@ -1,12 +1,6 @@
 @import url("https://db.onlinewebfonts.com/c/3f605c44a5fad5a5a42710fc696d9488?family=Age&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
-
-
-/* @font-face {
-  font-family: "";
-  src: url("./Raleway-Light.ttf");
-} */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

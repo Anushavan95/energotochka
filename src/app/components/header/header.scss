@@ -23,7 +23,8 @@
     //font-weight: 900;
     line-height: 30px;
     color: #353535;
-    @include textVariant(30px, #353535, 900, Age);
+    font-family: Raleway sans-serif;
+    @include textVariant(30px, #353535, 900, "Raleway");
   }
 }
 
@@ -59,10 +60,11 @@
     cursor: pointer;
     width: 100%;
     @include textVariant(20px, #ffffff, 400, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
   }
   .banner_text {
     @include textVariant(20px, #050505, 400, "Raleway");
-    font-family: sans-serif;
+    font-family: Raleway format("truetype") sans-serif;
     line-height: 24px;
   }
 }
@@ -97,6 +99,7 @@
     background: #34ab7d;
   }
   .running-text {
-    @include textVariant(20px, #f0f0f0, 400, Age);
+    @include textVariant(20px, #f0f0f0, 400, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
   }
 }

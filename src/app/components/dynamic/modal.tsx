@@ -7,6 +7,7 @@ interface Imodal {
   item: any;
 }
 const Modal: React.FC<Imodal> = ({ setContent, item }) => {
+  console.log(item, "iteemmm");
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {
@@ -37,21 +38,21 @@ const Modal: React.FC<Imodal> = ({ setContent, item }) => {
               ×
             </span>
             <div className="content-modal-part">
-              <Image className="rounded-t-lg" src={item.image} alt="" />
+              <Image className="rounded-t-lg" src={item?.image} alt="" />
               <div>
-                <p>{item.contentTitle}</p>
-                <h2 className="text-lg font-bold mb-4">{item.title}</h2>
-                <p>{item.contentDescription}</p>
+                <p>{item?.contentTitle}</p>
+                <h2 className="text-lg font-bold mb-4">{item?.title}</h2>
+                <p>{item?.contentDescription}</p>
                 <button className="modal-content-btn">
                   Проконсультироваться
                 </button>
                 <div className="blogs-content">
-                  {item.blog &&
+                  {item?.blog &&
                     item?.blog?.map((blog: blogType, index: number) => {
                       return (
                         <div key={index} className="blog-card">
-                          <h3>{blog.title}</h3>
-                          <p>{blog.desc}</p>
+                          <h3>{blog?.title}</h3>
+                          <p>{blog?.desc}</p>
                         </div>
                       );
                     })}
