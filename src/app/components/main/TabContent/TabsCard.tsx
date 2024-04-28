@@ -1,3 +1,4 @@
+"use client";
 import Tabs from "../../dynamic/tabs";
 
 import {
@@ -6,7 +7,7 @@ import {
   tabsCardElements3,
 } from "@/app/utils/types";
 import CardContent from "./cardContent";
-import Carousel from "../../../../../node_modules/react-multi-carousel/lib/types";
+// import Carousel from "../../../../../node_modules/react-multi-carousel/lib/types";
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -32,7 +33,9 @@ const TabsCard = () => {
       title: "медленные переменного тока",
       content: (
         <div className="cards_tab">
+          {/* <Carousel responsive={responsive}> */}
           <CardContent tabCard={tabsCardElements} />
+          {/* </Carousel> */}
         </div>
       ),
     },
@@ -48,10 +51,9 @@ const TabsCard = () => {
       title: "дополнительное",
       content: (
         <div className="cards_tab">
-          <Carousel responsive={responsive}>
-            <CardContent tabCard={tabsCardElements3} />
-          </Carousel>
-          ;
+          {/* <Carousel responsive={responsive}> */}
+          <CardContent tabCard={tabsCardElements3} />
+          {/* </Carousel> */};
         </div>
       ),
     },

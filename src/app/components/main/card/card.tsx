@@ -1,12 +1,19 @@
+import DoneIcon from "@/app/assets/icon/Done";
 import React from "react";
-import InfoPopup from "../../dynamic/infoPopup";
+import Text from "../../dynamic/Text";
 
 interface Iprops {
   title: string;
-  htmlContent?: string | any;
+  htmlContent?: boolean;
   children?: React.ReactNode;
+  component?: React.ReactNode;
 }
-const Card: React.FC<Iprops> = ({ title, htmlContent, children }) => {
+const Card: React.FC<Iprops> = ({
+  title,
+  htmlContent,
+  component,
+  children,
+}) => {
   return (
     <div className="full-card max-w-sm rounded overflow-hidden shadow-lg">
       <div className="px-6 py-4">
@@ -14,7 +21,7 @@ const Card: React.FC<Iprops> = ({ title, htmlContent, children }) => {
           {title}
         </h3>
         <div className="line"></div>
-        <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+        <div>{htmlContent ? <>{component}</> : null}</div>
         {children}
       </div>
     </div>

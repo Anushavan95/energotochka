@@ -8,7 +8,7 @@ const Banner = () => {
     <div className="banner_container">
       <div className="banner_card">
         <p className="banner_text">
-          Помогаем предпринимателям и компаниям открыть новый рынок с
+          Помогаем предпринимателям и компаниям открыть <br /> новый рынок с
           безграничными возможностями
         </p>
         {/* <button className="banner_button bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
