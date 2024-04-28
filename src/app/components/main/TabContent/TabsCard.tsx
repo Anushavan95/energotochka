@@ -1,14 +1,31 @@
-import Image from "../../../../../node_modules/next/image";
 import Tabs from "../../dynamic/tabs";
 
 import {
   tabsCardElements,
   tabsCardElements2,
   tabsCardElements3,
-  tabsCardType,
 } from "@/app/utils/types";
 import CardContent from "./cardContent";
-
+import Carousel from "../../../../../node_modules/react-multi-carousel/lib/types";
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
 const TabsCard = () => {
   const tabs = [
     {
@@ -31,7 +48,10 @@ const TabsCard = () => {
       title: "дополнительное",
       content: (
         <div className="cards_tab">
-          <CardContent tabCard={tabsCardElements3} />
+          <Carousel responsive={responsive}>
+            <CardContent tabCard={tabsCardElements3} />
+          </Carousel>
+          ;
         </div>
       ),
     },

@@ -11,7 +11,7 @@ const CardContent: React.FC<Icard> = ({ tabCard }) => {
   const [content, setContent] = useState<tabsCardType[] | null>(null);
   return (
     <>
-      {tabCard.map((item: tabsCardType, index: number) => {
+      {tabCard?.map((item: tabsCardType, index: number) => {
         return (
           <div
             key={index}
