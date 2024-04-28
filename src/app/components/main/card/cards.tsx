@@ -5,7 +5,9 @@ import Card from "./card";
 const Cards = () => {
   return (
     <div className="cards_container">
-      <h3 className="cards_title">преимущества наших станций</h3>
+      <h3 className="cards_title text-3xl font-bold mb-4">
+        преимущества наших станций
+      </h3>
       <section className="cards-list">
         <Card
           title={"Инновационность"}

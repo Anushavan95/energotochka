@@ -15,20 +15,14 @@
     width: 100%;
     p {
       @include textVariant(18px, #353535, 500, "sans-seif");
-      font-family: sans-serif;
     }
   }
   .about_title {
-    @include textVariant(30px, #353535, 500, "Age");
+    @include textVariant(30px, #353535, 500, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
+
     margin-bottom: 10px;
   }
-  //   .about_banner_image {
-  //     max-width: 700px;
-  //     width: 100%;
-  //     img {
-  //       width: 100%;
-  //     }
-  //   }
 }
 
 // cards
@@ -37,7 +31,8 @@
   margin-top: 100px;
   .cards_title {
     margin-bottom: 10px;
-    @include textVariant(30px, #353535, 500, "Age");
+    @include textVariant(30px, #353535, 500, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
   }
   .cards-list {
     display: flex;
@@ -66,9 +61,6 @@
         rgba(0, 0, 0, 0) 100%
       );
       border-image-slice: 1;
-      //   background-color: #000000;
-      //   border: 1px solid black;
-      //   border: 0.5px solid;
     }
   }
 }
@@ -80,7 +72,6 @@
   .title-popup {
     border-bottom: 1px solid #101010;
     padding-bottom: 10px;
-    // margin-bottom: 30px;
   }
   p {
     @include textVariant(18px, #353535, 400, "sans-serif");
@@ -120,7 +111,9 @@
 .card-tab-container {
   margin-top: 100px;
   .card-tab-title {
-    @include textVariant(30px, #353535, 500, "Age");
+    @include textVariant(30px, #353535, 500, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
+
     margin-bottom: 10px;
     width: 100%;
   }
@@ -161,7 +154,7 @@
 //   overflow: auto !important;
 // }
 .-translate-x-1\/2 {
-  --tw-translate-x: -58%;
+  --tw-translate-x: -107%;
 }
 .modal-btn {
   width: 100%;
@@ -202,15 +195,20 @@
 .blogs_container {
   margin-top: 100px;
   .blogs_container_title {
-    @include textVariant(30px, #101010, 400, "Age");
+    @include textVariant(30px, #101010, 400, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
   }
 }
 .blogs_list {
+  .-translate-x-1\/2 {
+    --tw-translate-x: -50%;
+  }
   .read_state {
     margin-top: 10px;
     cursor: pointer;
 
-    @include textVariant(18px, #34ab7d, 400, "sans-serif");
+    @include textVariant(18px, #34ab7d, 400, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
   }
   .rounded {
     max-width: 1100px;
@@ -322,6 +320,7 @@
 .network_container {
   margin-top: 100px;
   .network_container_title {
-    @include textVariant(30px, #353535, 500, "Age");
+    @include textVariant(30px, #353535, 500, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
   }
 }

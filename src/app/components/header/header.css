@@ -98,7 +98,7 @@
   font-size: 18px;
   color: #353535;
   font-weight: 400;
-  font-family: "Raleway";
+  font-family: Raleway format("truetype") sans-serif;
 }
 .banner_container .second_banner .banner_more {
   font-size: 18px;

@@ -10,7 +10,8 @@
     justify-content: space-between;
     align-items: center;
     .footer-title {
-      @include textVariant(50px, #ffffff, 400, "Tahoma");
+      @include textVariant(50px, #ffffff, 400, "Raleway");
+      font-family: Raleway format("truetype") sans-serif;
     }
   }
   .footer-content {
@@ -18,7 +19,9 @@
   }
   .footer-text-site {
     margin-top: 20px;
-    @include textVariant(16px, #ffffff, 400, "sans-serif");
+    @include textVariant(16px, #ffffff, 400, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
+
     opacity: 0.5;
     font-family: sans-serif;
   }
@@ -27,6 +30,7 @@
   }
   .footer-text-right,
   .footer-text-left {
-    @include textVariant(20px, #ffffff, 400, "sans-serif");
+    @include textVariant(20px, #ffffff, 400, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
   }
 }

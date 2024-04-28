@@ -58,7 +58,7 @@ const TabsCard = () => {
                     {item.description}
                   </p>
                 </div>
-                <Modal setContent={setContent} item={content} />
+                <Modal setContent={setContent} item={item} />
               </div>
             );
           })}
@@ -106,7 +106,7 @@ const TabsCard = () => {
                     {item.description}
                   </p>
                 </div>
-                <Modal setContent={setContent} item={content} />
+                <Modal setContent={setContent} item={item} />
               </div>
             );
           })}
@@ -153,7 +153,7 @@ const TabsCard = () => {
                     {item.description}
                   </p>
                 </div>
-                <Modal setContent={setContent} item={content} />
+                <Modal setContent={setContent} item={item} />
               </div>
             );
           })}
