@@ -48,7 +48,7 @@ const Blogs_2_content = () => {
           а также CCS или CHAdeMO для быстрых зарядных устройств постоянного
           тока уровня 3.{" "}
         </p>
-        <button>Написать нам</button>
+        <button className="btn_blogs">Написать нам</button>
       </div>
     </div>
   );
