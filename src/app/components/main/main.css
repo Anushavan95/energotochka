@@ -1,0 +1,332 @@
+@import url("https://db.onlinewebfonts.com/c/3f605c44a5fad5a5a42710fc696d9488?family=Age");
+
+.about_container .about_banner {
+  border-radius: 20px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.about_container .about_banner_text {
+  max-width: 600px;
+  width: 100%;
+}
+.about_container .about_banner_text p {
+  font-size: 18px;
+  color: #353535;
+  font-weight: 500;
+  font-family: "sans-seif";
+  font-family: sans-serif;
+}
+.about_container .about_title {
+  font-size: 30px;
+  color: #353535;
+  font-weight: 500;
+  font-family: "Age";
+  margin-bottom: 10px;
+}
+
+.cards_container {
+  margin-top: 100px;
+}
+.cards_container .cards_title {
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: #353535;
+  font-weight: 500;
+  font-family: "Age";
+}
+.cards_container .cards-list {
+  display: flex;
+  justify-content: space-between;
+}
+.cards_container .full-card {
+  max-width: 380px;
+  width: 100%;
+  border: 0.5px solid;
+  background: #ffffff;
+  border-radius: 20px;
+  border-image-source: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+.cards_container .full-card li {
+  display: flex;
+  gap: 10px;
+  margin: 5px 0px;
+}
+.cards_container .full-card .line {
+  border-image-source: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  border-image-slice: 1;
+}
+
+.blogs_list {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.blogs_list .title-popup {
+  border-bottom: 1px solid #101010;
+  padding-bottom: 10px;
+}
+.blogs_list p {
+  font-size: 18px;
+  color: #353535;
+  font-weight: 400;
+  font-family: "sans-serif";
+  font-family: sans-serif;
+}
+.blogs_list .full-card {
+  max-width: 380px;
+  width: 100%;
+  border: 0.5px solid;
+  background: #ffffff;
+  border-radius: 20px;
+  border-image-source: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+.blogs_list .line {
+  border-image-source: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  border-image-slice: 1;
+}
+
+.full-card-title {
+  font-size: 20px;
+  color: #050505;
+  font-weight: 400;
+  font-family: "sans-serif";
+  font-family: sans-serif;
+  border-bottom-width: 1px;
+  border-style: solid; /* Use solid border style */
+  border-image: linear-gradient(to right, #000000 100%, #000000 0%) 1;
+}
+
+.card-tab-container {
+  margin-top: 100px;
+}
+.card-tab-container .card-tab-title {
+  font-size: 30px;
+  color: #353535;
+  font-weight: 500;
+  font-family: "Age";
+  margin-bottom: 10px;
+  width: 100%;
+}
+.card-tab-container button {
+  background: #34ab7d;
+  border-radius: 20px;
+}
+.card-tab-container .buttons-tab {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  width: 100%;
+  gap: 15px;
+}
+.card-tab-container .buttons-tab .text-gray-800 {
+  background-color: white;
+}
+
+.cards_tab {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+}
+.card .card-title-catalog {
+  font-size: 20px;
+  color: #353535;
+  font-weight: 500;
+  font-family: "Age";
+}
+
+.-translate-x-1\/2 {
+  --tw-translate-x: -58%;
+}
+
+.modal-btn {
+  width: 100%;
+}
+.modal-btn .more-btn {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+  background: #34ab7d;
+  border-radius: 10px;
+}
+
+.faq-container {
+  margin-top: 100px;
+}
+.faq-container .faq-container-title {
+  font-size: 30px;
+  color: #353535;
+  font-weight: 500;
+  font-family: "Age";
+}
+.faq-container .faq-list {
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding: 15px;
+}
+.faq-container .faq-title {
+  font-size: 18px;
+  color: #101010;
+  font-weight: 400;
+  font-family: "Tahoma";
+}
+.faq-container .circle-arrow {
+  background: #34ab7d;
+  border-radius: 25px;
+}
+.faq-container .circle-arrow path {
+  color: white;
+}
+
+.blogs_container {
+  margin-top: 100px;
+}
+.blogs_container .blogs_container_title {
+  font-size: 30px;
+  color: #101010;
+  font-weight: 400;
+  font-family: "Age";
+}
+
+.blogs_list .read_state {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #34ab7d;
+  font-weight: 400;
+  font-family: "sans-serif";
+}
+.blogs_list .rounded {
+  max-width: 1100px;
+  width: 100%;
+}
+.blogs_list .blogs_content_container {
+  display: flex;
+  gap: 30px;
+}
+.blogs_list .blogs_content_container .btn_blogs {
+  background: #34ab7d;
+  border-radius: 10px;
+  color: #f5f5f5;
+  padding: 10px;
+  margin-top: 20px;
+  max-width: 240px;
+  width: 100%;
+}
+.blogs_list .blogs_content_container .content {
+  width: 50%;
+}
+.blogs_list .blogs_content_container .content strong {
+  font-size: 18px;
+  font-family: sans-serif;
+  margin-top: 30px;
+  display: block;
+}
+
+.network_content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  background-color: white;
+  padding: 30px 40px 30px 20px;
+  border-radius: 15px;
+}
+.network_content .banner_button {
+  background: #34ab7d;
+  width: 100%;
+  margin-top: 20px;
+}
+.network_content .inputs_container {
+  max-width: 540px;
+  width: 100%;
+}
+.network_content .inputs_container input {
+  margin: 5px 0px;
+  border-bottom: 1px solid #050505;
+}
+.network_content .inputs_container .info {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #959595;
+  font-weight: 400;
+  font-family: "Tahoma";
+  text-align: center;
+}
+
+.right {
+  transform: rotate(180deg);
+}
+
+.elem-right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.elem-right svg {
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: white;
+  max-width: 1100px;
+  width: 100%;
+}
+.modal-content .content-modal-part {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.modal-content .blogs-content {
+  display: grid;
+  grid-template-columns: repeat(3, 180px);
+  gap: 15px;
+}
+.modal-content .blog-card {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.modal-content .blog-card h3 {
+  font-size: 16px;
+  color: #101010;
+  font-weight: 600;
+  font-family: "Tahoma";
+}
+.modal-content .blog-card p {
+  font-size: 14px;
+  color: #353535;
+  font-weight: 400;
+  font-family: "Tahoma";
+}
+.modal-content .modal-content-btn {
+  padding: 10px;
+  color: white;
+  background: #34ab7d;
+  border-radius: 20px;
+  margin: 20px 0px;
+}
+
+.network_container {
+  margin-top: 100px;
+}
+.network_container .network_container_title {
+  font-size: 30px;
+  color: #353535;
+  font-weight: 500;
+  font-family: "Age";
+}
+
+/*# sourceMappingURL=main.css.map */

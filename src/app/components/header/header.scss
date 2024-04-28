@@ -1,4 +1,4 @@
-@import "../../styles//mixins";
+@import "../../styles/mixins";
 .header_container_banner {
   display: flex;
   padding-top: 50px;
@@ -7,7 +7,7 @@
     max-width: 600px;
     width: 100%;
     .title-desc {
-      @include textVariant(14px, #959595, 400, "sans-serif");
+      @include textVariant(14px, #959595, 400, "Raleway");
       font-family: sans-serif;
     }
   }
@@ -17,10 +17,13 @@
   }
   .title {
     margin-top: 90px;
-    @include textVariant(70px, #34ab7d, 400, "Age");
+    @include textVariant(70px, #34ab7d, 400, Age);
   }
   .title-desc-info {
-    @include textVariant(28px, #353535, 400, "Age");
+    //font-weight: 900;
+    line-height: 30px;
+    color: #353535;
+    @include textVariant(30px, #353535, 900, Age);
   }
 }
 
@@ -55,10 +58,10 @@
     padding: 10px;
     cursor: pointer;
     width: 100%;
-    @include textVariant(20px, #ffffff, 400, "Tahoma");
+    @include textVariant(20px, #ffffff, 400, "Raleway");
   }
   .banner_text {
-    @include textVariant(20px, #050505, 400, "sans-serif");
+    @include textVariant(20px, #050505, 400, "Raleway");
     font-family: sans-serif;
     line-height: 24px;
   }
@@ -75,15 +78,15 @@
       position: relative;
     }
     .banner_title {
-      @include textVariant(30px, #050505, 400, "Age");
+      @include textVariant(30px, #050505, 400, Age);
       margin: 0;
     }
     .banner_info {
       margin: 5px 0px 5px;
-      @include textVariant(18px, #353535, 400, "Tahoma");
+      @include textVariant(18px, #353535, 400, "Raleway");
     }
     .banner_more {
-      @include textVariant(18px, #34ab7d, 400, "Tahoma");
+      @include textVariant(18px, #34ab7d, 400, "Raleway");
     }
   }
 }
@@ -94,6 +97,6 @@
     background: #34ab7d;
   }
   .running-text {
-    @include textVariant(20px, #f0f0f0, 400, "Tahoma");
+    @include textVariant(20px, #f0f0f0, 400, Age);
   }
 }

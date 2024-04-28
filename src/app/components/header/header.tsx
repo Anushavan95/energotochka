@@ -27,9 +27,9 @@ const Header = () => {
                 energotochka
               </h1>
             </div>
-            <h2 className="title-desc-info">
+            <span className="title-desc-info">
               электрические станции под ключ с сопровождением и ведением
-            </h2>
+            </span>
             <Banner />
           </div>
           <div className="header_right">
