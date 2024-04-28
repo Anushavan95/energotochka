@@ -5,7 +5,7 @@ import AbouImage from "../../../assets/images/about.png";
 const About = () => {
   return (
     <div className="about_container">
-      <h2 className="about_title">информация о нас</h2>
+      <h2 className=" about_title text-3xl font-bold mb-4">информация о нас</h2>
       <div className="about_banner">
         <div className="about_banner_text">
           <p>

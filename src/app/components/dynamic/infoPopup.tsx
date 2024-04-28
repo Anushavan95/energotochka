@@ -34,29 +34,6 @@ const InfoPopup: React.FC<Iinfo> = ({ title, children, btnText }) => {
             </span>
             <h3>{title}</h3>
             {children}
-            {/* <p>{levelText1}</p> */}
-            {/* <div className="content-modal-part">
-              <Image className="rounded-t-lg" src={item.image} alt="" />
-              <div>
-                <p>{item.contentTitle}</p>
-                <h2 className="text-lg font-bold mb-4">{item.title}</h2>
-                <p>{item.contentDescription}</p>
-                <button className="modal-content-btn">
-                  Проконсультироваться
-                </button>
-                <div className="blogs-content">
-                  {item.blog &&
-                    item?.blog?.map((blog: blogType) => {
-                      return (
-                        <div className="blog-card">
-                          <h3>{blog.title}</h3>
-                          <p>{blog.desc}</p>
-                        </div>
-                      );
-                    })}
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       )}

@@ -2,7 +2,9 @@ import React from "react";
 const Network = () => {
   return (
     <div className="network_container">
-      <h3 className="text-3xl font-bold mb-4">быстрая связь</h3>
+      <h3 className="text-3xl font-bold network_container_title mb-4">
+        быстрая связь
+      </h3>
       <div className="network_content">
         <div className="inputs_container">
           <input

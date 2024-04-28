@@ -11,11 +11,15 @@
     padding: 20px;
   }
   .about_banner_text {
-    max-width: 550px;
+    max-width: 600px;
     width: 100%;
+    p {
+      @include textVariant(18px, #353535, 500, "sans-seif");
+      font-family: sans-serif;
+    }
   }
   .about_title {
-    @include textVariant(30px, #353535, 500, "Tahoma");
+    @include textVariant(30px, #353535, 500, "Age");
     margin-bottom: 10px;
   }
   //   .about_banner_image {
@@ -33,7 +37,7 @@
   margin-top: 100px;
   .cards_title {
     margin-bottom: 10px;
-    @include textVariant(30px, #353535, 500, "Tahoma");
+    @include textVariant(30px, #353535, 500, "Age");
   }
   .cards-list {
     display: flex;
@@ -50,6 +54,11 @@
       #000000 0%,
       rgba(0, 0, 0, 0) 100%
     );
+    li {
+      display: flex;
+      gap: 10px;
+      margin: 5px 0px;
+    }
     .line {
       border-image-source: linear-gradient(
         90deg,
@@ -98,7 +107,7 @@
 .card-tab-container {
   margin-top: 100px;
   .card-tab-title {
-    @include textVariant(30px, #353535, 500, "Tahoma");
+    @include textVariant(30px, #353535, 500, "Age");
     margin-bottom: 10px;
   }
   button {
@@ -128,6 +137,9 @@
     align-items: center;
     width: 100%;
     border-radius: 20px;
+    .card-title-catalog {
+      @include textVariant(20px, #353535, 500, "Age");
+    }
   }
   .more-btn {
     width: 100%;
@@ -142,6 +154,9 @@
 
 .faq-container {
   margin-top: 100px;
+  .faq-container-title {
+    @include textVariant(30px, #353535, 500, "Age");
+  }
   .faq-list {
     background-color: #ffffff;
     border-radius: 50px;
@@ -162,6 +177,9 @@
 // BLOGS
 .blogs_container {
   margin-top: 100px;
+  .blogs_container_title {
+    @include textVariant(30px, #101010, 400, "Age");
+  }
 }
 .blogs_list {
   .read_state {
@@ -252,4 +270,7 @@
 // network
 .network_container {
   margin-top: 100px;
+  .network_container_title {
+    @include textVariant(30px, #353535, 500, "Age");
+  }
 }

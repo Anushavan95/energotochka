@@ -52,7 +52,7 @@ const FAQs = () => {
 
   return (
     <div className="faq-container mx-auto">
-      <h3 className="text-3xl font-bold mb-4">F.A.Q.</h3>
+      <h3 className="text-3xl faq-container-title font-bold mb-4">F.A.Q.</h3>
       {faqs.map((faq) => (
         <div key={faq.id} className="mb-4 faq-list">
           <div
@@ -77,7 +77,7 @@ const FAQs = () => {
               </svg>
             </div>
           </div>
-          {showAnswer[faq.id] && <p className="mt-2 ">{faq.answer}</p>}
+          {showAnswer[faq.id] && <p className="mt-2">{faq.answer}</p>}
         </div>
       ))}
     </div>

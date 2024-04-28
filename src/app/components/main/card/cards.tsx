@@ -1,8 +1,5 @@
-import {
-  descriptionBlock,
-  listDescriptionBlock,
-  secureDescriptionBlock,
-} from "@/app/utils/types";
+import DoneIcon from "@/app/assets/icon/Done";
+import Text from "../../dynamic/Text";
 import Card from "./card";
 
 const Cards = () => {
@@ -12,10 +9,72 @@ const Cards = () => {
       <section className="cards-list">
         <Card
           title={"Инновационность"}
-          htmlContent={listDescriptionBlock}
-        ></Card>
-        <Card title={"Совместимость"} htmlContent={descriptionBlock} />
-        <Card title={"Безопасность"} htmlContent={secureDescriptionBlock} />
+          htmlContent={true}
+          component={
+            <Text>
+              {" "}
+              <ul>
+                <li>
+                  <DoneIcon />
+                  подключение через «Bluetooth»
+                </li>
+                <li>
+                  <DoneIcon />
+                  регулирование заряда тока
+                </li>
+                <li>
+                  <DoneIcon />
+                  управление через приложение
+                </li>
+                <li>
+                  <DoneIcon />
+                  записывание истории заряда
+                </li>
+              </ul>
+            </Text>
+          }
+        />
+        <Card
+          title={"Совместимость"}
+          htmlContent={true}
+          component={
+            <Text>
+              <p>
+                Все зарядные станции, поставляемые нами совместимы с различными
+                моделями автомобилей, например такие как «Zeekr», «Volkswagen»,
+                «Tesla», «NIO», «Nissan», «Lixiang», «Mercedes», «BYD», «BMW» и
+                прочее
+              </p>
+            </Text>
+          }
+        />
+        <Card
+          title={"Безопасность"}
+          htmlContent={true}
+          component={
+            <Text>
+              {" "}
+              <ul>
+                <li>
+                  <DoneIcon />
+                  защита от перенапряжения
+                </li>
+                <li>
+                  <DoneIcon />
+                  защита от перегревания
+                </li>
+                <li>
+                  <DoneIcon />
+                  защита от недонапряжения
+                </li>
+                <li>
+                  <DoneIcon />
+                  защита от молнии и непогоды
+                </li>
+              </ul>
+            </Text>
+          }
+        />
       </section>
     </div>
   );
