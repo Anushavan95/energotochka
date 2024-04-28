@@ -15,8 +15,7 @@ const Modal: React.FC<Imodal> = ({ setContent, item }) => {
   };
   const closeModal = () => setIsOpen(false);
   return (
-    <div>
-      {/* Modal Trigger Button */}
+    <div className="modal-btn">
       <button
         onClick={openModal}
         className="more-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2  px-4 rounded"

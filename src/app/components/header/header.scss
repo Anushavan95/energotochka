@@ -1,6 +1,7 @@
 @import "../../styles//mixins";
 .header_container_banner {
   display: flex;
+  padding-top: 50px;
   justify-content: space-between;
   .header_container_left {
     max-width: 600px;
