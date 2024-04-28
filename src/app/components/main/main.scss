@@ -77,6 +77,11 @@
   display: flex;
   justify-content: space-between;
   gap: 15px;
+  .title-popup {
+    border-bottom: 1px solid #101010;
+    padding-bottom: 10px;
+    // margin-bottom: 30px;
+  }
   p {
     @include textVariant(18px, #353535, 400, "sans-serif");
     font-family: sans-serif;
@@ -107,7 +112,9 @@
 .full-card-title {
   @include textVariant(20px, #050505, 400, "sans-serif");
   font-family: sans-serif;
-  border-bottom: 1px solid;
+  border-bottom-width: 1px;
+  border-style: solid; /* Use solid border style */
+  border-image: linear-gradient(to right, #000000 100%, #000000 0%) 1;
 }
 
 .card-tab-container {
@@ -192,7 +199,7 @@
     margin-top: 10px;
     cursor: pointer;
 
-    @include textVariant(18px, #34ab7d, 400, "Tahoma");
+    @include textVariant(18px, #34ab7d, 400, "sans-serif");
   }
   .rounded {
     max-width: 1100px;
@@ -200,8 +207,25 @@
   }
   .blogs_content_container {
     display: flex;
+    gap: 30px;
+    .btn_blogs {
+      background: #34ab7d;
+      border-radius: 10px;
+      color: #f5f5f5;
+      padding: 10px;
+      margin-top: 20px;
+      max-width: 240px;
+      width: 100%;
+    }
     .content {
       width: 50%;
+      strong {
+        // @include textVariant(18px, black, 500, "sans-serif");
+        font-size: 18px;
+        font-family: sans-serif;
+        margin-top: 30px;
+        display: block;
+      }
     }
   }
 }

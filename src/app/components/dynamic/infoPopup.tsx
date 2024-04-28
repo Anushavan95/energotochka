@@ -32,7 +32,7 @@ const InfoPopup: React.FC<Iinfo> = ({ title, children, btnText }) => {
             >
               ×
             </span>
-            <h3>{title}</h3>
+            <h3 className="title-popup">{title}</h3>
             {children}
           </div>
         </div>
