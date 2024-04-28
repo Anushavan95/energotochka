@@ -5,56 +5,159 @@ import {
   tabsCardElements,
   tabsCardElements2,
   tabsCardElements3,
+  tabsCardType,
 } from "@/app/utils/types";
-import CardContent from "./cardContent";
-// import Carousel from "../../../../../node_modules/react-multi-carousel/lib/types";
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-  },
-};
+import LeftArrow from "@/app/assets/icon/leftArrow";
+import { Carousel } from "@trendyol-js/react-carousel";
+import Image from "next/image";
+import { useState } from "react";
+import "react-multi-carousel/lib/styles.css";
+import Modal from "../../dynamic/modal";
+
 const TabsCard = () => {
+  const [content, setContent] = useState<tabsCardType[] | null>(null);
+
   const tabs = [
     {
       title: "медленные переменного тока",
       content: (
-        <div className="cards_tab">
-          {/* <Carousel responsive={responsive}> */}
-          <CardContent tabCard={tabsCardElements} />
-          {/* </Carousel> */}
-        </div>
+        <Carousel
+          show={3.5}
+          slide={3}
+          swiping={true}
+          key={1}
+          infinite={false}
+          leftArrow={
+            <div className="elem-right">
+              <LeftArrow />
+            </div>
+          }
+          rightArrow={
+            <div className="elem-right">
+              <LeftArrow clasnName={"right"} />
+            </div>
+          }
+        >
+          {tabsCardElements?.map((item: any, index: number) => {
+            return (
+              <div
+                key={index}
+                className="card max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+              >
+                <a href="#">
+                  <Image className="rounded-t-lg" src={item.image} alt="" />
+                </a>
+                <div className="p-5">
+                  <a href="#">
+                    <h3 className="mb-2 card-title-catalog  text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      {item.title}
+                    </h3>
+                  </a>
+
+                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    {item.description}
+                  </p>
+                </div>
+                <Modal setContent={setContent} item={content} />
+              </div>
+            );
+          })}
+        </Carousel>
       ),
     },
+
     {
       title: "быстрые постоянного тока",
       content: (
-        <div className="cards_tab">
-          <CardContent tabCard={tabsCardElements2} />
-        </div>
+        <Carousel
+          show={3.5}
+          slide={3}
+          key={2}
+          infinite={false}
+          swiping={true}
+          leftArrow={
+            <div className="elem-right">
+              <LeftArrow />
+            </div>
+          }
+          rightArrow={
+            <div className="elem-right">
+              <LeftArrow clasnName={"right"} />
+            </div>
+          }
+        >
+          {tabsCardElements2?.map((item: any, index: number) => {
+            return (
+              <div
+                key={index}
+                className="card max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+              >
+                <a href="#">
+                  <Image className="rounded-t-lg" src={item.image} alt="" />
+                </a>
+                <div className="p-5">
+                  <a href="#">
+                    <h3 className="mb-2 card-title-catalog  text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      {item.title}
+                    </h3>
+                  </a>
+
+                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    {item.description}
+                  </p>
+                </div>
+                <Modal setContent={setContent} item={content} />
+              </div>
+            );
+          })}
+        </Carousel>
       ),
     },
     {
       title: "дополнительное",
       content: (
-        <div className="cards_tab">
-          {/* <Carousel responsive={responsive}> */}
-          <CardContent tabCard={tabsCardElements3} />
-          {/* </Carousel> */};
-        </div>
+        <Carousel
+          show={3.5}
+          slide={3}
+          swiping={true}
+          key={3}
+          infinite={false}
+          leftArrow={
+            <div className="elem-right">
+              <LeftArrow />
+            </div>
+          }
+          rightArrow={
+            <div className="elem-right">
+              <LeftArrow clasnName={"right"} />
+            </div>
+          }
+        >
+          {tabsCardElements3?.map((item: any, index: number) => {
+            return (
+              <div
+                key={index}
+                className="card max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+              >
+                <a href="#">
+                  <Image className="rounded-t-lg" src={item.image} alt="" />
+                </a>
+                <div className="p-5">
+                  <a href="#">
+                    <h3 className="mb-2 card-title-catalog  text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      {item.title}
+                    </h3>
+                  </a>
+
+                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    {item.description}
+                  </p>
+                </div>
+                <Modal setContent={setContent} item={content} />
+              </div>
+            );
+          })}
+        </Carousel>
       ),
     },
     {
@@ -63,11 +166,11 @@ const TabsCard = () => {
     },
     {
       title: "настенные станции",
-      content: <></>,
+      content: <>2</>,
     },
     {
       title: " портативные станции",
-      content: <></>,
+      content: <>3</>,
     },
     // Add more tabs as needed
   ];

@@ -122,6 +122,7 @@
   .card-tab-title {
     @include textVariant(30px, #353535, 500, "Age");
     margin-bottom: 10px;
+    width: 100%;
   }
   button {
     background: #34ab7d;
@@ -143,26 +144,36 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
-  .card {
-    // max-width: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    border-radius: 20px;
-    .card-title-catalog {
-      @include textVariant(20px, #353535, 500, "Age");
-    }
+}
+.card {
+  // max-width: 320px;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  .card-title-catalog {
+    @include textVariant(20px, #353535, 500, "Age");
   }
+}
+// .styles-module_item-provider__YgMwz {
+//   overflow: auto !important;
+// }
+.-translate-x-1\/2 {
+  --tw-translate-x: -58%;
+}
+.modal-btn {
+  width: 100%;
   .more-btn {
     width: 100%;
     text-align: center;
     justify-content: center;
-    padding: 10px;
+    padding: 5px;
     background: #34ab7d;
+    border-radius: 10px;
   }
 }
-
 // FAQ
 
 .faq-container {
@@ -259,10 +270,20 @@
 }
 
 // modal
-
+.right {
+  transform: rotate(180deg);
+}
+.elem-right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  svg {
+    cursor: pointer;
+  }
+}
 .modal-content {
   background-color: white;
-  padding: 50px;
+  // padding: 50px;
   max-width: 1100px;
   width: 100%;
   .content-modal-part {
