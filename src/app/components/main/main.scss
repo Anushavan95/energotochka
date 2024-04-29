@@ -51,9 +51,9 @@
     background: #ffffff;
     border-radius: 20px;
     border-image-source: linear-gradient(
-                    90deg,
-                    #000000 0%,
-                    rgba(0, 0, 0, 0) 100%
+      90deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0) 100%
     );
 
     li {
@@ -64,9 +64,9 @@
 
     .line {
       border-image-source: linear-gradient(
-                      90deg,
-                      #000000 0%,
-                      rgba(0, 0, 0, 1) 100%
+        90deg,
+        #000000 0%,
+        rgba(0, 0, 0, 1) 100%
       );
       border-image-slice: 1;
     }
@@ -77,7 +77,7 @@
   display: flex;
   justify-content: space-between;
   gap: 15px;
-
+  // align-items: flex-end;
   .title-popup {
     border-bottom: 1px solid #101010;
     padding-bottom: 10px;
@@ -95,17 +95,23 @@
     background: #ffffff;
     border-radius: 20px;
     border-image-source: linear-gradient(
-                    90deg,
-                    #000000 0%,
-                    rgba(0, 0, 0, 0) 100%
+      90deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0) 100%
     );
+    .px-6 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 100%;
+    }
   }
 
   .line {
     border-image-source: linear-gradient(
-                    90deg,
-                    #000000 0%,
-                    rgba(0, 0, 0, 0) 100%
+      90deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0) 100%
     );
 
     border-image-slice: 1;
@@ -134,7 +140,7 @@
 
   button {
     background: #34ab7d;
-    border-radius: 20px;
+    border-radius: 10px;
   }
 
   .buttons-tab {
@@ -147,6 +153,15 @@
     .text-gray-800 {
       background-color: white;
     }
+
+    .mr-2 {
+      &:nth-child(n + 4):nth-child(-n + 6) {
+        color: #34ab7d;
+      }
+    }
+    .text-white {
+      color: white !important;
+    }
   }
 }
 
@@ -158,13 +173,15 @@
 }
 
 .card {
-  // max-width: 320px;
+  max-width: 320px;
+  height: 100%;
   display: flex;
   padding: 10px;
   flex-direction: column;
   align-items: center;
   width: 100%;
   border-radius: 20px;
+  justify-content: space-between;
 
   .card-title-catalog {
     @include textVariant(20px, #353535, 500, "Age");
@@ -214,7 +231,6 @@
       font-family: "Raleway";
       font-size: 18px;
       color: #404040;
-
     }
   }
 
