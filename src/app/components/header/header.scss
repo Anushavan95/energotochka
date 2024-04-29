@@ -70,6 +70,9 @@
 }
 
 .banner_container {
+  .-translate-x-1\/2 {
+  --tw-translate-x: -50%
+  }
   .second_banner {
     height: 160px;
     margin-top: 25px;
@@ -92,7 +95,38 @@
     }
   }
 }
+.header_top_banner {
+  .banner_button {
+        background: #34ab7d;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .info {
+    margin-top: 30px;
+      @include textVariant(18px,#959595, 400, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
+  }
+  max-width: 530px;
+  width: 100%;
+  .top_text{
+    .header_top_info {
+          @include textVariant(18px,#101010, 400, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
+    }
+     .top_text_title {
+    @include textVariant(50px, #34AB7D, 500, "Age");
+  }
+p {
+    @include textVariant(20px,#353535, 400, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
 
+}
+  }
+  .field_inputs {
+     margin: 25px 0px 30px;
+  }
+ 
+}
 // running
 .running {
   .animate-running-line {

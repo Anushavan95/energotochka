@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Point from "../../assets/images/point.png";
 import InfoPopup from "../dynamic/infoPopup";
+import BannerPopupContent from "./bannerPopupContent";
 
 const Banner = () => {
   return (
@@ -14,7 +15,10 @@ const Banner = () => {
         {/* <button className="banner_button bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
           Посмотреть коммерческое предложение
         </button> */}
-        <InfoPopup btnText={`Посмотреть коммерческое предложение`} />
+        <InfoPopup btnText={`Посмотреть коммерческое предложение`} >
+          
+          <BannerPopupContent />
+           </InfoPopup>
       </div>
       <div className="banner_card second_banner ">
         <Image

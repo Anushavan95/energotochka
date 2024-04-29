@@ -13,7 +13,7 @@ export const Footer = () => {
         </div>
       </div>
 
-      <div className="footer-content container mx-auto flex justify-between items-center">
+      <div className="footer-content  flex justify-between items-center">
         <div className="footer-text-left">
           <ul>
             <li>сертификаты и иные документы</li>
