@@ -10,8 +10,8 @@
     justify-content: space-between;
     align-items: center;
     .footer-title {
-      @include textVariant(50px, #ffffff, 400, "Raleway");
-      font-family: Raleway format("truetype") sans-serif;
+      @include textVariant(50px, #ffffff, 400, "Age");
+    ///  font-family: Raleway format("truetype") sans-serif;
     }
   }
   .footer-content {

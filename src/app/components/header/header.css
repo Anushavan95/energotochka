@@ -28,10 +28,11 @@
 .header_container_banner .title-desc-info {
   line-height: 30px;
   color: #353535;
+  font-family: Raleway sans-serif;
   font-size: 30px;
   color: #353535;
   font-weight: 900;
-  font-family: Age;
+  font-family: "Raleway";
 }
 
 .header_right .hedaer_image_right {
@@ -66,16 +67,20 @@
   color: #ffffff;
   font-weight: 400;
   font-family: "Raleway";
+  font-family: Raleway format("truetype") sans-serif;
 }
 .banner_card .banner_text {
   font-size: 20px;
   color: #050505;
   font-weight: 400;
   font-family: "Raleway";
-  font-family: sans-serif;
+  font-family: Raleway format("truetype") sans-serif;
   line-height: 24px;
 }
 
+.banner_container .-translate-x-1\/2 {
+  --tw-translate-x: -50% ;
+}
 .banner_container .second_banner {
   height: 160px;
   margin-top: 25px;
@@ -98,13 +103,63 @@
   font-size: 18px;
   color: #353535;
   font-weight: 400;
-  font-family: Raleway format("truetype") sans-serif;
+  font-family: "Raleway";
 }
 .banner_container .second_banner .banner_more {
   font-size: 18px;
   color: #34ab7d;
   font-weight: 400;
   font-family: "Raleway";
+}
+
+.header_top_banner {
+  max-width: 530px;
+  width: 100%;
+}
+.header_top_banner .banner_button {
+  background: #34ab7d;
+  width: 100%;
+  margin-top: 20px;
+}
+.header_top_banner .info {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #959595;
+  font-weight: 400;
+  font-family: "Raleway";
+  font-family: Raleway format("truetype") sans-serif;
+}
+.header_top_banner .top_text .header_top_info {
+  font-size: 18px;
+  color: #101010;
+  font-weight: 400;
+  font-family: "Raleway";
+  font-family: Raleway format("truetype") sans-serif;
+}
+.header_top_banner .top_text .model_sub_header {
+  font-size: 20px;
+  color: #101010;
+  font-weight: 400;
+  font-family: "Age";
+}
+.header_top_banner .top_text .top_text_title {
+  font-size: 50px;
+  color: #34AB7D;
+  font-weight: 500;
+  font-family: "Age";
+}
+.header_top_banner .top_text p {
+  font-size: 20px;
+  color: #353535;
+  font-weight: 400;
+  font-family: "Raleway";
+  font-family: Raleway format("truetype") sans-serif;
+}
+.header_top_banner .field_inputs {
+  margin: 20px 20px 30px 20px;
+}
+.header_top_banner .field_inputs input {
+  border-bottom: 1px solid #353535;
 }
 
 .running .animate-running-line {
@@ -114,7 +169,8 @@
   font-size: 20px;
   color: #f0f0f0;
   font-weight: 400;
-  font-family: Age;
+  font-family: "Raleway";
+  font-family: Raleway format("truetype") sans-serif;
 }
 
 /*# sourceMappingURL=header.css.map */

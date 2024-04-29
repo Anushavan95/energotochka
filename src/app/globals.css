@@ -1,4 +1,4 @@
-@import url("https://db.onlinewebfonts.com/c/3f605c44a5fad5a5a42710fc696d9488?family=Age&display=swap");
+@import url("https://db.onlinewebfonts.com/c/3f605c44a5fad5a5a42710fc696d9488?family=Age");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
@@ -34,7 +34,7 @@ body {
   /* padding: 50px; */
   /* padding: 50px; */
 
-  max-width: 1280px;
+  max-width: 1180px;
   width: 100%;
   margin: 0 auto;
 }

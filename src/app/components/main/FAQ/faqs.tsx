@@ -81,7 +81,7 @@ const FAQs = () => {
               </svg>
             </div>
           </div>
-          {showAnswer[faq.id] && <p className="mt-2">{faq.answer}</p>}
+          {showAnswer[faq.id] && <><hr/><p className="mt-2">{faq.answer}</p></>}
         </div>
       ))}
     </div>

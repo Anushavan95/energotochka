@@ -103,7 +103,7 @@
   }
   .info {
     margin-top: 30px;
-      @include textVariant(18px,#959595, 400, "Raleway");
+      @include textVariant(16px,#959595, 400, "Raleway");
     font-family: Raleway format("truetype") sans-serif;
   }
   max-width: 530px;
@@ -112,6 +112,10 @@
     .header_top_info {
           @include textVariant(18px,#101010, 400, "Raleway");
     font-family: Raleway format("truetype") sans-serif;
+    }
+    .model_sub_header{
+      @include textVariant(20px,#101010, 400, "Age");
+
     }
      .top_text_title {
     @include textVariant(50px, #34AB7D, 500, "Age");
@@ -123,7 +127,10 @@ p {
 }
   }
   .field_inputs {
-     margin: 25px 0px 30px;
+     margin: 20px 20px 30px 20px;
+    input{
+      border-bottom: 1px solid #353535;
+    }
   }
  
 }

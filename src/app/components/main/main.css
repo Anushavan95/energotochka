@@ -1,5 +1,3 @@
-@import url("https://db.onlinewebfonts.com/c/3f605c44a5fad5a5a42710fc696d9488?family=Age");
-
 .about_container .about_banner {
   border-radius: 20px;
   background-color: #ffffff;
@@ -16,13 +14,13 @@
   color: #353535;
   font-weight: 500;
   font-family: "sans-seif";
-  font-family: sans-serif;
 }
 .about_container .about_title {
   font-size: 30px;
   color: #353535;
   font-weight: 500;
-  font-family: "Age";
+  font-family: "Raleway";
+  font-family: Raleway format("truetype") sans-serif;
   margin-bottom: 10px;
 }
 
@@ -34,7 +32,8 @@
   font-size: 30px;
   color: #353535;
   font-weight: 500;
-  font-family: "Age";
+  font-family: "Raleway";
+  font-family: Raleway format("truetype") sans-serif;
 }
 .cards_container .cards-list {
   display: flex;
@@ -54,7 +53,7 @@
   margin: 5px 0px;
 }
 .cards_container .full-card .line {
-  border-image-source: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  border-image-source: linear-gradient(90deg, #000000 0%, rgb(0, 0, 0) 100%);
   border-image-slice: 1;
 }
 
@@ -91,11 +90,11 @@
   font-size: 20px;
   color: #050505;
   font-weight: 400;
-  font-family: "sans-serif";
-  font-family: sans-serif;
-  border-bottom-width: 1px;
-  border-style: solid; /* Use solid border style */
+  font-family: "Raleway";
   border-image: linear-gradient(to right, #000000 100%, #000000 0%) 1;
+}
+.full-card-title hr {
+  padding: 20px 0;
 }
 
 .card-tab-container {
@@ -105,7 +104,8 @@
   font-size: 30px;
   color: #353535;
   font-weight: 500;
-  font-family: "Age";
+  font-family: "Raleway";
+  font-family: Raleway format("truetype") sans-serif;
   margin-bottom: 10px;
   width: 100%;
 }
@@ -147,7 +147,7 @@
 }
 
 .-translate-x-1\/2 {
-  --tw-translate-x: -58%;
+  --tw-translate-x: -107%;
 }
 
 .modal-btn {
@@ -176,11 +176,25 @@
   border-radius: 50px;
   padding: 15px;
 }
+.faq-container .faq-list hr {
+  margin: 0 25px;
+}
+.faq-container .faq-list p {
+  padding: 25px 25px 0 25px;
+  font-family: "Raleway";
+  font-size: 18px;
+  color: #404040;
+}
 .faq-container .faq-title {
+  text-indent: 25px;
+  margin-bottom: 10px;
   font-size: 18px;
   color: #101010;
   font-weight: 400;
-  font-family: "Tahoma";
+  font-family: "Raleway";
+}
+.faq-container .faq-title p {
+  text-indent: 25px;
 }
 .faq-container .circle-arrow {
   background: #34ab7d;
@@ -197,16 +211,21 @@
   font-size: 30px;
   color: #101010;
   font-weight: 400;
-  font-family: "Age";
+  font-family: "Raleway";
+  font-family: Raleway format("truetype") sans-serif;
 }
 
+.blogs_list .-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+}
 .blogs_list .read_state {
   margin-top: 10px;
   cursor: pointer;
   font-size: 18px;
   color: #34ab7d;
   font-weight: 400;
-  font-family: "sans-serif";
+  font-family: "Raleway";
+  font-family: Raleway format("truetype") sans-serif;
 }
 .blogs_list .rounded {
   max-width: 1100px;
@@ -326,7 +345,8 @@
   font-size: 30px;
   color: #353535;
   font-weight: 500;
-  font-family: "Age";
+  font-family: "Raleway";
+  font-family: Raleway format("truetype") sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */
