@@ -39,7 +39,21 @@
 }
 
 // banner
-
+.full-popup {
+  border-radius: 20px;
+  background: #ffffff;
+  width: 100%;
+  padding: 50px;
+  border-radius: 20px;
+  border-image-source: linear-gradient(
+    90deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  .modal-content {
+    border-radius: 20px;
+  }
+}
 .banner_card {
   background-color: #ffffff;
   padding: 20px;
@@ -68,10 +82,48 @@
     line-height: 24px;
   }
 }
+.success_modal {
+  max-width: 520px;
+  width: 100%;
+  padding: 50px 80px;
+  .real-time-text {
+    margin-top: 50px;
+    display: block;
+    @include textVariant(16px, #959595, 400, "Raleway");
+  }
+  .info_succes_modal {
+    max-width: 520px;
+    width: 100%;
+    span {
+      margin-bottom: 15px;
+
+      @include textVariant(16px, #101010, 400, "Raleway");
+      font-family: Raleway format("truetype") sans-serif;
+
+      display: block;
+    }
+    @include textVariant(16px, #101010, 400, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
+  }
+  .top_text_title {
+    @include textVariant(50px, #34ab7d, 500, "Age");
+  }
+  max-width: 530px;
+  width: 100%;
+  .model_sub_header {
+    @include textVariant(20px, #101010, 400, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
+  }
+  .flex-done-icon {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px 20px;
+  }
+}
 
 .banner_container {
   .-translate-x-1\/2 {
-  --tw-translate-x: -50%
+    --tw-translate-x: -50%;
   }
   .second_banner {
     height: 160px;
@@ -97,42 +149,39 @@
 }
 .header_top_banner {
   .banner_button {
-        background: #34ab7d;
+    background: #34ab7d;
     width: 100%;
     margin-top: 20px;
   }
   .info {
     margin-top: 30px;
-      @include textVariant(16px,#959595, 400, "Raleway");
+    @include textVariant(16px, #959595, 400, "Raleway");
     font-family: Raleway format("truetype") sans-serif;
   }
   max-width: 530px;
   width: 100%;
-  .top_text{
+  .top_text {
     .header_top_info {
-          @include textVariant(18px,#101010, 400, "Raleway");
-    font-family: Raleway format("truetype") sans-serif;
+      @include textVariant(18px, #101010, 400, "Raleway");
+      font-family: Raleway format("truetype") sans-serif;
     }
-    .model_sub_header{
-      @include textVariant(20px,#101010, 400, "Age");
-
+    .model_sub_header {
+      @include textVariant(20px, #101010, 400, "Age");
     }
-     .top_text_title {
-    @include textVariant(50px, #34AB7D, 500, "Age");
-  }
-p {
-    @include textVariant(20px,#353535, 400, "Raleway");
-    font-family: Raleway format("truetype") sans-serif;
-
-}
+    .top_text_title {
+      @include textVariant(50px, #34ab7d, 500, "Age");
+    }
+    p {
+      @include textVariant(20px, #353535, 400, "Raleway");
+      font-family: Raleway format("truetype") sans-serif;
+    }
   }
   .field_inputs {
-     margin: 20px 20px 30px 20px;
-    input{
+    margin: 20px 20px 30px 20px;
+    input {
       border-bottom: 1px solid #353535;
     }
   }
- 
 }
 // running
 .running {

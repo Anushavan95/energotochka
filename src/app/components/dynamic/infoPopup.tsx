@@ -24,8 +24,8 @@ const InfoPopup: React.FC<Iinfo> = ({ title, children, btnText }) => {
 
       {/* Modal Dialog Box */}
       {isOpen && (
-        <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white shadow-md  rounded z-50">
-          <div>
+        <div className="full-popup fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white shadow-md  rounded z-50">
+          <div className="modal-content">
             <span
               onClick={closeModal}
               className="absolute top-0 right-0 cursor-pointer p-4"

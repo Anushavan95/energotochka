@@ -1,11 +1,9 @@
-import React from "react";
+import Image from "../../../../node_modules/next/image";
+import Circle from "../../assets/images/circle.png";
 import Electronica from "../../assets/images/electronica.png";
 import Banner from "./banner";
-import Line from "./Line";
-import About from "../main/about/about";
 import "./header.scss";
-import Circle from "../../assets/images/circle.png";
-import Image from "../../../../node_modules/next/image";
+import Line from "./Line";
 const Header = () => {
   return (
     <>
