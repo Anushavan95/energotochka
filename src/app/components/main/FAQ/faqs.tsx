@@ -1,10 +1,17 @@
 "use client";
+import { tabsCardType } from "@/app/utils/types";
+import { Carousel } from "@trendyol-js/react-carousel";
 import React, { useState } from "react";
-
+import "react-multi-carousel/lib/styles.css";
+import { useMediaQuery } from "react-responsive";
 const FAQs = () => {
   // State to manage the visibility of each answer
   const [showAnswer, setShowAnswer] = useState<any>({});
+  const [content, setContent] = useState<tabsCardType[] | null>(null);
+  const isTabletScreen = useMediaQuery({ maxWidth: 920 });
 
+  const isSmallScreen = useMediaQuery({ maxWidth: 600 });
+  const slidesToShow = isSmallScreen ? 1.1 : isTabletScreen ? 2.2 : 3;
   // Function to toggle the visibility of an answer
   const toggleAnswer = (id: number) => {
     setShowAnswer((prevState: any) => ({
@@ -53,37 +60,54 @@ const FAQs = () => {
   return (
     <div className="faq-container mx-auto">
       <h3 className="text-3xl faq-container-title font-bold mb-4">F.A.Q.</h3>
-      {faqs.map((faq) => (
-        <div key={faq.id} className="mb-4 faq-list">
-          <div
-            className="flex items-center justify-between cursor-pointer"
-            onClick={() => toggleAnswer(faq.id)}
-          >
-            <h2 className="text-xl faq-title font-semibold">{faq.question}</h2>
-            <div className="circle-arrow">
-              <svg
-                className={`w-6 h-6 ${
-                  showAnswer[faq.id] ? "transform rotate-180" : ""
-                }`}
-                width="24px"
-                height="24px"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M7 10L12 15L17 10"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+      <Carousel
+        responsive={true}
+        show={slidesToShow}
+        slide={3}
+        swiping={true}
+        key={1}
+        hideArrows={true}
+        infinite={false}
+      >
+        {faqs.map((faq) => (
+          <div key={faq.id} className="mb-4 faq-list">
+            <div
+              className="flex items-center justify-between cursor-pointer"
+              onClick={() => toggleAnswer(faq.id)}
+            >
+              <h2 className="text-xl faq-title font-semibold">
+                {faq.question}
+              </h2>
+              <div className="circle-arrow">
+                <svg
+                  className={`w-6 h-6 ${
+                    showAnswer[faq.id] ? "transform rotate-180" : ""
+                  }`}
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 10L12 15L17 10"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
             </div>
+            {showAnswer[faq.id] && (
+              <>
+                <hr />
+                <p className="mt-2">{faq.answer}</p>
+              </>
+            )}
           </div>
-          {showAnswer[faq.id] && <><hr/><p className="mt-2">{faq.answer}</p></>}
-        </div>
-      ))}
+        ))}
+      </Carousel>
     </div>
   );
 };

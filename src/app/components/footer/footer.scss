@@ -11,7 +11,7 @@
     align-items: center;
     .footer-title {
       @include textVariant(50px, #ffffff, 400, "Age");
-    ///  font-family: Raleway format("truetype") sans-serif;
+      ///  font-family: Raleway format("truetype") sans-serif;
     }
   }
   .footer-content {
@@ -35,20 +35,19 @@
   }
 }
 
-
 .cookie_container {
   position: fixed;
   bottom: 0;
-  background: #FFFFFF;
+  background: #ffffff;
   width: 100%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   display: flex;
   padding: 10px;
-justify-content: center;
-align-items: center;
+  justify-content: center;
+  align-items: center;
   p {
-        @include textVariant(16px, #101010, 400, "Raleway");
+    @include textVariant(16px, #101010, 400, "Raleway");
     font-family: Raleway format("truetype") sans-serif;
   }
   .text_coookie {
@@ -56,10 +55,45 @@ align-items: center;
     width: 100%;
   }
   .btn_cookie {
-    background: #34AB7D;
+    background: #34ab7d;
     border-radius: 10px;
     padding: 10px;
-        @include textVariant(18px, #FFFFFF, 400, "Raleway");
+    @include textVariant(18px, #ffffff, 400, "Raleway");
     font-family: Raleway format("truetype") sans-serif;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .footer-container {
+    padding: 50px 20px !important;
+    .top-footer {
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start !important;
+      .footer-title {
+        font-size: 30px;
+      }
+    }
+    .footer-text-center {
+      margin: 55px 0px 50px;
+    }
+    .footer-text-left {
+      margin-top: 50px;
+    }
+    .footer-text-site {
+      font-size: 12px;
+    }
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    li {
+      text-align: left;
+      font-size: 14px;
+    }
+  }
+
+  .cookie_container {
+    flex-direction: column;
   }
 }
