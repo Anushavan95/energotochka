@@ -1,11 +1,10 @@
 "use client";
 import DoneIcon from "@/app/assets/icon/Done";
-import LeftArrow from "@/app/assets/icon/leftArrow";
 import { Carousel } from "@trendyol-js/react-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { useMediaQuery } from "react-responsive";
 import Text from "../../dynamic/Text";
 import Card from "./card";
-import { useMediaQuery } from "react-responsive";
 const Cards = () => {
   const isTabletScreen = useMediaQuery({ maxWidth: 920 });
 

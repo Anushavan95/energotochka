@@ -196,3 +196,28 @@
     font-family: Raleway format("truetype") sans-serif;
   }
 }
+
+@media screen and (max-width: 920px) {
+  .header_container_banner {
+    .title {
+      font-size: 50px;
+    }
+    .banner_text {
+      text-align: left;
+    }
+    .header_right {
+      position: absolute;
+      right: 20px;
+    }
+    .header_top_logo_text {
+      display: none !important;
+    }
+    .right_image_electronica {
+      display: none;
+    }
+    .header_container_left {
+      max-width: inherit !important;
+      text-align: center;
+    }
+  }
+}

@@ -20,7 +20,7 @@ const TabsCard = () => {
   const isTabletScreen = useMediaQuery({ maxWidth: 920 });
 
   const isSmallScreen = useMediaQuery({ maxWidth: 600 });
-  const slidesToShow = isSmallScreen ? 1.1 : isTabletScreen ? 2.2 : 3.5;
+  const slidesToShow = isSmallScreen ? 1.1 : isTabletScreen ? 2.2 : 3.2;
 
   const tabs = [
     {
@@ -77,7 +77,7 @@ const TabsCard = () => {
       content: (
         <Carousel
           // responsive={}
-          show={3.5}
+          show={slidesToShow}
           slide={3}
           key={2}
           infinite={false}
@@ -124,7 +124,7 @@ const TabsCard = () => {
       title: "дополнительное",
       content: (
         <Carousel
-          show={3.5}
+          show={slidesToShow}
           slide={3}
           swiping={true}
           key={3}

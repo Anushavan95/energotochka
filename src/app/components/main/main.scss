@@ -89,6 +89,8 @@
   }
 
   .full-card {
+    height: 100%;
+
     max-width: 380px;
     width: 100%;
     border: 0.5px solid;
@@ -103,7 +105,6 @@
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      height: 100%;
     }
   }
 
@@ -173,8 +174,8 @@
 }
 
 .styles-module_item-provider__YgMwz {
-  .-translate-x-1\/2{
---tw-translate-x: -103%;
+  .-translate-x-1\/2 {
+    --tw-translate-x: -103%;
     padding: 30px;
   }
 }
