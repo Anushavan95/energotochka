@@ -67,6 +67,9 @@
     text-align: center;
   }
   .read_state {
+    &::after {
+      content: "Посмотреть коммерческое предложение";
+    }
     background: #34ab7d;
     margin-top: 25px;
     border-radius: 10px;
@@ -198,7 +201,30 @@
 }
 
 @media screen and (max-width: 920px) {
+  .banner_card {
+    margin-top: 40px;
+    .read_state {
+      &::after {
+        content: "Посмотреть предложение";
+      }
+    }
+  }
   .header_container_banner {
+    .title-desc-info {
+      font-size: 21px;
+    }
+    .second_banner {
+      padding: 15px;
+      text-align: left;
+      height: 170px;
+      .banner_info {
+        font-size: 14px;
+      }
+      .banner_title {
+        line-height: normal;
+        font-size: 20px;
+      }
+    }
     .title {
       font-size: 50px;
     }
@@ -219,5 +245,8 @@
       max-width: inherit !important;
       text-align: center;
     }
+  }
+  .running {
+    margin: 40px 0px 50px;
   }
 }

@@ -95,5 +95,12 @@
 
   .cookie_container {
     flex-direction: column;
+    p {
+      font-size: 12px;
+      gap: 5px;
+    }
+    .btn_cookie {
+      font-size: 14px;
+    }
   }
 }
