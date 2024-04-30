@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import AbouImage from "../../../assets/images/about.png";
+import AboutCarMob from "../../../assets/images/car_mob.png";
 
 const About = () => {
   return (
@@ -19,7 +20,12 @@ const About = () => {
           </p>
         </div>
         <div className="about_banner_image">
-          <Image src={AbouImage} alt="About of the author" />
+          <Image src={AbouImage} alt="About of the author" className="desc" />
+          <Image
+            src={AboutCarMob}
+            alt="About of the author"
+            className="mobile"
+          />
         </div>
       </div>
     </div>

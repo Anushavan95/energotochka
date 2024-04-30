@@ -25,6 +25,7 @@ const Cards = () => {
           key={1}
           hideArrows={true}
           infinite={true}
+          
           // leftArrow={
           //   <div className="elem-right">
           //     <LeftArrow />

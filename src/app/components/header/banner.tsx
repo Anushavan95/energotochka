@@ -15,10 +15,9 @@ const Banner = () => {
         {/* <button className="banner_button bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
           Посмотреть коммерческое предложение
         </button> */}
-        <InfoPopup btnText={`Посмотреть коммерческое предложение`} >
-          
+        <InfoPopup>
           <BannerPopupContent />
-           </InfoPopup>
+        </InfoPopup>
       </div>
       <div className="banner_card second_banner ">
         <Image
@@ -30,8 +29,8 @@ const Banner = () => {
         <div>
           <h3 className="banner_title text-3xl font-bold mb-4">WM-DCEV</h3>
           <p className="banner_info">
-            Настенное зарядное устройство заряжает за 1 час — 165 километров
-            пути
+            Настенное <br /> зарядное устройство заряжает за 1 час — 165
+            километров пути
           </p>
           <span className="banner_more">Подробнее</span>
         </div>
