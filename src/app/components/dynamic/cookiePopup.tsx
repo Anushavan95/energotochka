@@ -2,7 +2,7 @@ import React from 'react'
 interface IProps {
     handleClickPopUp: () => void
 }
-const CookiePopup:React.FC<IProps> = ({handleClickPopUp}) => {
+const CookiePopup:React.FC<IProps> = ({ handleClickPopUp}) => {
   return (
     <div className='cookie_container'>
         <div className='text_coookie'>
