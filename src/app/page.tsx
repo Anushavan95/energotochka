@@ -5,7 +5,7 @@ import Main from "./components/main/main";
 export default function Home() {
   return (
     <>
-      <div className={"container-2xl "}>
+      <div>
         <Header />
         <Main />
       </div>
