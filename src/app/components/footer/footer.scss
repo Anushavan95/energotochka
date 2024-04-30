@@ -34,3 +34,32 @@
     font-family: Raleway format("truetype") sans-serif;
   }
 }
+
+
+.cookie_container {
+  position: fixed;
+  bottom: 0;
+  background: #FFFFFF;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  padding: 10px;
+justify-content: center;
+align-items: center;
+  p {
+        @include textVariant(16px, #101010, 400, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
+  }
+  .text_coookie {
+    max-width: 900px;
+    width: 100%;
+  }
+  .btn_cookie {
+    background: #34AB7D;
+    border-radius: 10px;
+    padding: 10px;
+        @include textVariant(18px, #FFFFFF, 400, "Raleway");
+    font-family: Raleway format("truetype") sans-serif;
+  }
+}

@@ -1,9 +1,16 @@
+"use client"
 import TelegramIcon from "@/app/assets/icon/Telegram";
 import VkIcon from "@/app/assets/icon/Vk";
-import React from "react";
+import React, { useState } from "react";
 import "./footer.scss";
+import CookiePopup from "../dynamic/cookiePopup";
 export const Footer = () => {
+  const [open, setOpen] = useState<boolean>(true)
+  const handleClickPopUp = () => {
+setOpen(false)
+  }
   return (
+    <>
     <footer className="text-white py-4 rounded-t-lg border-t-2 footer-container">
       <div className="top-footer">
         <h2 className="footer-title">energotochka</h2>
@@ -44,5 +51,10 @@ export const Footer = () => {
         действующим российским законодательством
       </p>
     </footer>
+    {open && 
+    <CookiePopup handleClickPopUp={handleClickPopUp} /> 
+    
+    }
+    </>
   );
 };
