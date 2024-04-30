@@ -9,24 +9,30 @@ import {
 } from "@/app/utils/types";
 import LeftArrow from "@/app/assets/icon/leftArrow";
 import { Carousel } from "@trendyol-js/react-carousel";
+import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
 import { useState } from "react";
-import "react-multi-carousel/lib/styles.css";
 import Modal from "../../dynamic/modal";
+import { useMediaQuery } from "react-responsive";
 
 const TabsCard = () => {
   const [content, setContent] = useState<tabsCardType[] | null>(null);
+  const isTabletScreen = useMediaQuery({ maxWidth: 920 });
+
+  const isSmallScreen = useMediaQuery({ maxWidth: 600 });
+  const slidesToShow = isSmallScreen ? 1.1 : isTabletScreen ? 2.2 : 3.5;
 
   const tabs = [
     {
       title: "медленные переменного тока",
       content: (
         <Carousel
-          show={3.5}
+          responsive={true}
+          show={slidesToShow}
           slide={3}
           swiping={true}
           key={1}
-          infinite={false}
+          infinite={true}
           leftArrow={
             <div className="elem-right">
               <LeftArrow />
@@ -70,6 +76,7 @@ const TabsCard = () => {
       title: "быстрые постоянного тока",
       content: (
         <Carousel
+          // responsive={}
           show={3.5}
           slide={3}
           key={2}
