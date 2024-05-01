@@ -1,13 +1,12 @@
 "use client";
-import { tabsCardType } from "@/app/utils/types";
 import { Carousel } from "@trendyol-js/react-carousel";
-import React, { useState } from "react";
+import { useState } from "react";
 import "react-multi-carousel/lib/styles.css";
 import { useMediaQuery } from "react-responsive";
 const FAQs = () => {
   // State to manage the visibility of each answer
   const [showAnswer, setShowAnswer] = useState<any>({});
-  const [content, setContent] = useState<tabsCardType[] | null>(null);
+  // const [content, setContent] = useState<tabsCardType[] | null>(null);
   const isTabletScreen = useMediaQuery({ maxWidth: 920 });
 
   const isSmallScreen = useMediaQuery({ maxWidth: 600 });
@@ -60,16 +59,16 @@ const FAQs = () => {
   return (
     <div className="faq-container mx-auto">
       <h3 className="text-3xl faq-container-title font-bold mb-4">F.A.Q.</h3>
-      <Carousel
+      {/* <Carousel
         responsive={true}
         show={slidesToShow}
         slide={3}
         swiping={true}
         key={1}
         hideArrows={true}
-        infinite={false}
+        infinite={true}
       >
-        {faqs.map((faq) => (
+        {faqs?.map((faq) => (
           <div key={faq.id} className="mb-4 faq-list">
             <div
               className="flex items-center justify-between cursor-pointer"
@@ -99,15 +98,15 @@ const FAQs = () => {
                 </svg>
               </div>
             </div>
-            {showAnswer[faq.id] && (
+            {showAnswer?.[faq?.id] && (
               <>
                 <hr />
-                <p className="mt-2">{faq.answer}</p>
+                <p className="mt-2">{faq?.answer}</p>
               </>
             )}
           </div>
         ))}
-      </Carousel>
+      </Carousel> */}
     </div>
   );
 };
