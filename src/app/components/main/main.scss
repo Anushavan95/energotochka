@@ -205,6 +205,14 @@
   width: 100%;
   border-radius: 20px;
   justify-content: space-between;
+  .modal-content {
+    max-width: 1000px;
+  }
+
+  .-translate-x-1\/2 {
+    --tw-translate-x: -63% !important;
+  }
+
   .more-btn {
     padding: 10px !important;
   }
