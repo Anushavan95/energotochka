@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header_container_banner {
   display: flex;
   padding-top: 50px;
@@ -43,6 +44,17 @@
   margin-top: 50px;
 }
 
+.full-popup {
+  border-radius: 20px;
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 20px;
+  border-image-source: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+.full-popup .modal-content {
+  border-radius: 20px;
+}
+
 .banner_card {
   background-color: #ffffff;
   padding: 20px;
@@ -69,6 +81,9 @@
   font-family: "Raleway";
   font-family: Raleway format("truetype") sans-serif;
 }
+.banner_card .read_state::after {
+  content: "Посмотреть коммерческое предложение";
+}
 .banner_card .banner_text {
   font-size: 20px;
   color: #050505;
@@ -78,8 +93,66 @@
   line-height: 24px;
 }
 
+.success_modal {
+  max-width: 520px;
+  width: 100%;
+  padding: 50px 80px;
+  max-width: 530px;
+  width: 100%;
+}
+.success_modal .success_modal_flex {
+  display: flex;
+  gap: 10px;
+  margin-top: 35px;
+  justify-content: center;
+}
+.success_modal .real-time-text {
+  margin-top: 50px;
+  display: block;
+  font-size: 16px;
+  color: #959595;
+  font-weight: 400;
+  font-family: "Raleway";
+}
+.success_modal .info_succes_modal {
+  max-width: 520px;
+  width: 100%;
+  font-size: 16px;
+  color: #101010;
+  font-weight: 400;
+  font-family: "Raleway";
+  font-family: Raleway format("truetype") sans-serif;
+}
+.success_modal .info_succes_modal span {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #101010;
+  font-weight: 400;
+  font-family: "Raleway";
+  font-family: Raleway format("truetype") sans-serif;
+  display: block;
+}
+.success_modal .top_text_title {
+  font-size: 50px;
+  color: #34ab7d;
+  font-weight: 500;
+  font-family: "Age";
+}
+.success_modal .model_sub_header {
+  font-size: 20px;
+  color: #101010;
+  font-weight: 400;
+  font-family: "Raleway";
+  font-family: Raleway format("truetype") sans-serif;
+}
+.success_modal .flex-done-icon {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px 20px;
+}
+
 .banner_container .-translate-x-1\/2 {
-  --tw-translate-x: -50% ;
+  --tw-translate-x: -50%;
 }
 .banner_container .second_banner {
   height: 160px;
@@ -144,7 +217,7 @@
 }
 .header_top_banner .top_text .top_text_title {
   font-size: 50px;
-  color: #34AB7D;
+  color: #34ab7d;
   font-weight: 500;
   font-family: "Age";
 }
@@ -171,6 +244,53 @@
   font-weight: 400;
   font-family: "Raleway";
   font-family: Raleway format("truetype") sans-serif;
+}
+
+@media screen and (max-width: 920px) {
+  .banner_card {
+    margin-top: 40px;
+  }
+  .banner_card .read_state::after {
+    content: "Посмотреть предложение";
+  }
+  .header_container_banner .title-desc-info {
+    font-size: 21px;
+  }
+  .header_container_banner .second_banner {
+    padding: 15px;
+    text-align: left;
+    height: 170px;
+  }
+  .header_container_banner .second_banner .banner_info {
+    font-size: 14px;
+  }
+  .header_container_banner .second_banner .banner_title {
+    line-height: normal;
+    font-size: 20px;
+  }
+  .header_container_banner .title {
+    font-size: 50px;
+  }
+  .header_container_banner .banner_text {
+    text-align: left;
+  }
+  .header_container_banner .header_right {
+    position: absolute;
+    right: 20px;
+  }
+  .header_container_banner .header_top_logo_text {
+    display: none !important;
+  }
+  .header_container_banner .right_image_electronica {
+    display: none;
+  }
+  .header_container_banner .header_container_left {
+    max-width: inherit !important;
+    text-align: center;
+  }
+  .running {
+    margin: 40px 0px 50px;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

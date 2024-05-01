@@ -6,24 +6,46 @@
   .mobile {
     display: none;
   }
+
   .about_banner {
+    max-height: 245px;
+    padding: 20px;
     border-radius: 20px;
     background-color: #ffffff;
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    gap: 20px;
+   // gap: 20px;
+
+  }
+
+  .desc {
+    width: 520px!important;
+    height: 205px!important;
   }
 
   .about_banner_text {
-    max-width: 600px;
+    max-width: 520px;
     width: 100%;
-
+    margin-right: 20px;
     p {
-      @include textVariant(18px, #353535, 500, "sans-seif");
+      display: flex;
+      align-items:center;
+      max-width: 520px;
+      font-family: Raleway;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 20px;
+      text-align: left;
+      color: #050505;
+
+      //  @include textVariant(18px, #353535, 500, "sans-seif");
     }
   }
-
+  .about_banner_image{
+    min-width: 600px!important;
+    img{
+      min-width: 600px!important;
+    }
+  }
   .about_title {
     @include textVariant(30px, #353535, 500, "Raleway");
     font-family: Raleway format("truetype") sans-serif;
@@ -46,13 +68,16 @@
   .cards-list {
     display: flex;
     justify-content: space-between;
+
     .styles-module_item-tracker__3bypy {
       gap: 20px;
     }
   }
+
   .styles-module_item-container__a8zaY {
     width: 380px !important;
   }
+
   .full-card {
     max-width: 380px;
     width: 100%;
@@ -60,11 +85,12 @@
     background: #ffffff;
     border-radius: 20px;
     border-image-source: linear-gradient(
-      90deg,
-      #000000 0%,
-      rgba(0, 0, 0, 0) 100%
+                    90deg,
+                    #000000 0%,
+                    rgba(0, 0, 0, 0) 100%
     );
     height: 100%;
+
     li {
       display: flex;
       gap: 10px;
@@ -73,9 +99,9 @@
 
     .line {
       border-image-source: linear-gradient(
-        90deg,
-        #000000 0%,
-        rgba(0, 0, 0, 1) 100%
+                      90deg,
+                      #000000 0%,
+                      rgba(0, 0, 0, 1) 100%
       );
       border-image-slice: 1;
     }
@@ -90,6 +116,7 @@
   .styles-module_item-tracker__3bypy {
     gap: 20px;
   }
+
   .title-popup {
     border-bottom: 1px solid #101010;
     padding-bottom: 10px;
@@ -110,10 +137,11 @@
     background: #ffffff;
     border-radius: 20px;
     border-image-source: linear-gradient(
-      90deg,
-      #000000 0%,
-      rgba(0, 0, 0, 0) 100%
+                    90deg,
+                    #000000 0%,
+                    rgba(0, 0, 0, 0) 100%
     );
+
     .px-6 {
       display: flex;
       flex-direction: column;
@@ -124,9 +152,9 @@
 
   .line {
     border-image-source: linear-gradient(
-      90deg,
-      #000000 0%,
-      rgba(0, 0, 0, 0) 100%
+                    90deg,
+                    #000000 0%,
+                    rgba(0, 0, 0, 0) 100%
     );
 
     border-image-slice: 1;
@@ -136,6 +164,7 @@
 .full-card-title {
   @include textVariant(18px, #050505, 400, "Raleway");
   font-family: Raleway format("truetype") sans-serif;
+
   hr {
     padding: 20px 0;
   }
@@ -175,6 +204,7 @@
         color: #34ab7d;
       }
     }
+
     .text-white {
       color: white !important;
     }
@@ -205,6 +235,7 @@
   width: 100%;
   border-radius: 20px;
   justify-content: space-between;
+
   .modal-content {
     max-width: 1000px;
   }
@@ -216,6 +247,7 @@
   .more-btn {
     padding: 10px !important;
   }
+
   .card-title-catalog {
     @include textVariant(20px, #353535, 500, "Age");
   }
@@ -255,6 +287,7 @@
     border-radius: 50px;
     padding: 15px;
     margin: 15px 0px;
+
     hr {
       margin: 0 25px;
     }
@@ -357,6 +390,7 @@
     background: #34ab7d;
     width: 100%;
     margin-top: 20px;
+
     &::after {
       content: "Проконсультироваться со специалисом";
     }
@@ -466,23 +500,28 @@
         font-size: 14px;
       }
     }
+
     .mobile {
       display: block;
       width: 100%;
     }
+
     .desc {
       display: none;
     }
   }
   .cards_container {
     margin-top: 50px;
+
     .cards_title {
       font-size: 20px;
     }
+
     .cards-list {
       .full-card-title {
         font-size: 18px;
       }
+
       .full-card {
         li {
           font-size: 16px;
@@ -494,14 +533,17 @@
   }
   .card-tab-container {
     margin-top: 50px;
+
     .mr-2 {
       &:nth-child(n + 4):nth-child(-n + 6) {
         display: none;
       }
     }
+
     .elem-right {
       display: none;
     }
+
     .buttons-tab {
       margin-top: 20px;
     }
