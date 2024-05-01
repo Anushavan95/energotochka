@@ -1,4 +1,6 @@
 import DoneIcon from "@/app/assets/icon/Done";
+import Telegram_green from "@/app/assets/icon/Telegram_green";
+import Vk_Green from "@/app/assets/icon/Vk_Green";
 import React from "react";
 
 const SuccesModal = () => {
@@ -16,9 +18,14 @@ const SuccesModal = () => {
       <span className="real-time-text">
         настоящее окно автоматически закроется через 10 секунд
       </span>
-      <button className="banner_button bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+
+      {/* <button className="banner_button bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
         Подтвердить
-      </button>
+      </button> */}
+      <div className="success_modal_flex">
+        <Telegram_green />
+        <Vk_Green />
+      </div>
     </div>
   );
 };

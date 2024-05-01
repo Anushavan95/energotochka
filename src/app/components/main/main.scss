@@ -246,7 +246,7 @@
     background-color: #ffffff;
     border-radius: 50px;
     padding: 15px;
-    margin: 0;
+    margin: 15px 0px;
     hr {
       margin: 0 25px;
     }
@@ -438,6 +438,20 @@
 }
 
 @media screen and (max-width: 920px) {
+  .faq-container {
+    .styles-module_item-tracker__3bypy {
+      flex-direction: row;
+    }
+  }
+  .card-tab-container {
+    .card {
+      max-width: 380px;
+    }
+  }
+  .network_content {
+    justify-content: center;
+    padding: 30px;
+  }
   .about_container {
     .about_banner_text {
       p {

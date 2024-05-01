@@ -25,7 +25,7 @@ const BannerPopupContent = () => {
             placeholder="напишите номер сотового телефона"
           />
         </div>
-        <InfoPopup btnText={`Посмотреть коммерческое предложение`}>
+        <InfoPopup>
           <SuccesModal />
         </InfoPopup>
         <p className="info">
