@@ -23,9 +23,9 @@ const Cards = () => {
           slide={3}
           swiping={true}
           key={1}
-          hideArrows={true}
+          // hideArrows={true}
           infinite={true}
-          
+
           // leftArrow={
           //   <div className="elem-right">
           //     <LeftArrow />

@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    gap: 20px;
   }
 
   .about_banner_text {
@@ -45,6 +46,9 @@
   .cards-list {
     display: flex;
     justify-content: space-between;
+    .styles-module_item-tracker__3bypy {
+      gap: 20px;
+    }
   }
   .styles-module_item-container__a8zaY {
     width: 380px !important;
@@ -83,13 +87,17 @@
   justify-content: space-between;
   gap: 15px;
   // align-items: flex-end;
+  .styles-module_item-tracker__3bypy {
+    gap: 20px;
+  }
   .title-popup {
     border-bottom: 1px solid #101010;
     padding-bottom: 10px;
   }
 
   p {
-    @include textVariant(18px, #353535, 400, "sans-serif");
+    margin: 20px 0px 5px;
+    @include textVariant(16px, #101010, 400, "sans-serif");
     font-family: sans-serif;
   }
 
@@ -109,7 +117,8 @@
     .px-6 {
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: space-between;
+      height: 100%;
     }
   }
 
@@ -125,7 +134,8 @@
 }
 
 .full-card-title {
-  @include textVariant(20px, #050505, 400, "Raleway");
+  @include textVariant(18px, #050505, 400, "Raleway");
+  font-family: Raleway format("truetype") sans-serif;
   hr {
     padding: 20px 0;
   }
@@ -195,7 +205,9 @@
   width: 100%;
   border-radius: 20px;
   justify-content: space-between;
-
+  .more-btn {
+    padding: 10px !important;
+  }
   .card-title-catalog {
     @include textVariant(20px, #353535, 500, "Age");
   }
@@ -234,7 +246,7 @@
     background-color: #ffffff;
     border-radius: 50px;
     padding: 15px;
-
+    margin: 0;
     hr {
       margin: 0 25px;
     }
@@ -337,6 +349,9 @@
     background: #34ab7d;
     width: 100%;
     margin-top: 20px;
+    &::after {
+      content: "Проконсультироваться со специалисом";
+    }
   }
 
   .inputs_container {
@@ -467,6 +482,16 @@
     }
     .buttons-tab {
       margin-top: 20px;
+    }
+  }
+  .frame-map {
+    display: none;
+  }
+  .inputs_container {
+    .banner_button {
+      &::after {
+        content: "Проконсультироваться";
+      }
     }
   }
 }

@@ -7,7 +7,6 @@ interface Imodal {
   item: any;
 }
 const Modal: React.FC<Imodal> = ({ setContent, item }) => {
-  console.log(item, "iteemmm");
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {

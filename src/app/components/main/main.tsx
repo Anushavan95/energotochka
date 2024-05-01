@@ -13,7 +13,7 @@ const Main = () => {
       <Cards />
       <TabsCard />
       <Cards />
-      {/* <Network /> */}
+      <Network />
       <FAQs />
       <Blogs />
     </div>
